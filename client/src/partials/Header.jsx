@@ -117,13 +117,12 @@ function Header() {
               <div className="">
                 <img
                   className="h-16 w-auto object-cover object-center"
-                  // src="src\images\wiselogicslogo.jpeg"
-                  src={`${
+                  src={
                     !top
-                      ? "src\images\wiselogicslogo-bg-white.jpeg"
-                      : "src\images\wiselogicslogo.jpeg"
-                  }`}
-                  alt="wiselogicslogo-logo"
+                      ? "src/images/wiselogicslogo-bg-white.png"
+                      : "src/images/wiselogicslogo.png"
+                  }
+                  alt="wiselogicslogo"
                 />
               </div>
             </Link>
@@ -191,8 +190,6 @@ function Header() {
                   Contact us
                 </Link>
               </li>
-
-             
             </ul>
           </nav>
         </div>
