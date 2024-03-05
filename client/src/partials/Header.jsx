@@ -2,124 +2,95 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
-const ServicesList = () => {
-  return (
-    <ul className="px-2 h-72 overflow-y-auto bg-themeColor">
-      {/* Web Development */}
-      <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <h3 className="text-start text-bold ">Web Development</h3>
-        <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1 ">
-            <Link to={"/service/cmd"}>CMS Web Development</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/wordpress-development"}>
-              WordPress Development
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/ecommerce"}>E-commerce Development</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/web-optimization"}>Website Optimization</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/mobile-development"}>
-              Mobile App Development
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/full-stack-development"}>
-              Full Stack Development
-            </Link>
-          </li>
-        </ul>
-      </li>
-      {/* Web Design */}
-      <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <h3 className="text-start text-bold">Web Design</h3>
-        <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/responsive-website"}>
-              Responsive Website/ Mobile Design
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/ui-design"}>UI/UX Design</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/graphic-design"}>Graphic Design</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/landing-pages"}>Landing Page Design</Link>
-          </li>
-        </ul>
-      </li>
-      {/* Digital Marketing Solutions */}
-      <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <h3 className="text-start text-bold">Digital Marketing Solutions</h3>
-        <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/seo"}>
-              Organic Search - SEO (Search Engine Optimisation)
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/social-media-marketing"}>
-              Social Media Marketing
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/content-marketing"}>Content Marketing</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/email-marketing"}>Email Marketing</Link>
-          </li>
-        </ul>
-      </li>
-      {/* Digital Ads */}
-      <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <h3 className="text-start text-bold">
-          <Link to={"/service/digital-ads"}>Digital Ads</Link>
-        </h3>
-        <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/affiliate-marketing-services"}>
-              Affiliate Marketing Services
-            </Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1 ">
-            <Link to={"/service/social-media-ads"}>Social Media Ads</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/service/ppc-ads"}>PPC Ads</Link>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  );
-};
+// react icons 
+import {
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+} from "@heroicons/react/24/outline";
 
-const WorkList = () => {
-  return (
-    <ul className="px-2">
-      {/* Web Development */}
-      <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/our-work/case-studies"}>Case Studies</Link>
-          </li>
-          <li className="text-gray-700 hover:bg-white p-1">
-            <Link to={"/our-work/testimonials"}>Testimonials</Link>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  );
-};
 
 
 function Header() {
+
+  //  Navigation button 
+  const ServicesList = [
+    {
+      name: "Web Development",
+      description: "We build fast and secure websites",
+      href: "/services/web-development",
+      icon: ChartPieIcon,
+    },
+    {
+      name: "Web Design",
+      description: "Web design and development services",
+      href: "/services/web-design",
+      icon: CursorArrowRaysIcon,
+    },
+    {
+      name: "Digital Marketing",
+      description: "Digital marketing services",
+      href: "/services/digital-marketing",
+      icon: FingerPrintIcon,
+    },
+    {
+      name: "Digital Ads",
+      description: "Digital ads services",
+      href: "/services/digital-ads",
+      icon: SquaresPlusIcon,
+    },
+    {
+      name: "SEO",
+      description: "SEO services",
+      href: "/services/seo",
+      icon: ArrowPathIcon,
+    },
+  ];
+
+  const WorkList = [
+    {
+      name: "Analytics",
+      description: "Get a better understanding of your traffic",
+      href: "#",
+      icon: ChartPieIcon,
+    },
+    {
+      name: "Engagement",
+      description: "Speak directly to your customers",
+      href: "#",
+      icon: CursorArrowRaysIcon,
+    },
+    {
+      name: "Security",
+      description: "Your customers' data will be safe and secure",
+      href: "#",
+      icon: FingerPrintIcon,
+    },
+    {
+      name: "Integrations",
+      description: "Connect with third-party tools",
+      href: "#",
+      icon: SquaresPlusIcon,
+    },
+    {
+      name: "Automations",
+      description: "Build strategic funnels that will convert",
+      href: "#",
+      icon: ArrowPathIcon,
+    },
+  ];
+
+
+
+
+
   const [top, setTop] = useState(true);
 
   // detect whether user has scrolled the page down by 10px
@@ -176,7 +147,7 @@ function Header() {
                       : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
-                  <Dropdown title={"Services"} children={<ServicesList />} />
+                  <Dropdown title={"Our Expertise"} solutions={ServicesList} />
                 </Link>
               </li>
 
@@ -188,7 +159,7 @@ function Header() {
                       : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
-                  <Dropdown title={"Our Work"} children={<WorkList />} />
+                  <Dropdown title={"Our Work"} solutions={WorkList} />
                 </Link>
               </li>
               <li>

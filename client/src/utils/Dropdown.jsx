@@ -15,44 +15,10 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-const solutions = [
-  {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers' data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: ArrowPathIcon,
-  },
-];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
 
-export default function Dropdown({ title }) {
+
+
+export default function Dropdown({ title, solutions }) {
   const [top, setTop] = useState(true);
 
   // detect whether user has scrolled the page down by 10px
@@ -102,7 +68,7 @@ export default function Dropdown({ title }) {
                       aria-hidden="true"
                     />
                   </div>
-                  <div>
+                  <div className=" text-white hover:text-black">
                     <Link
                       href={item.href}
                       className="font-semibold text-white hover:text-black"
@@ -110,14 +76,13 @@ export default function Dropdown({ title }) {
                       {item.name}
                       <span className="absolute inset-0" />
                     </Link>
-                    <p className="mt-1 text-gray-600 text-white hover:text-black">
+                    <p className="mt-1 ">
                       {item.description}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
-          
           </div>
         </Popover.Panel>
       </Transition>
