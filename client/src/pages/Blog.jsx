@@ -8,7 +8,7 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Blog from "../partials/Blog";
+import Blog from "../partials/BlogCard";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 
 const HomeContent = () => {
@@ -57,77 +57,8 @@ function Home() {
           <HeroHome>
             <HomeContent />
           </HeroHome>
-
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-32 pb-12 md:pt-0 md:pb-20 ">
-              <h2 className="text-white text-center text-3xl pr-10 font-bold">
-                Meet Your Extended Growth Team
-              </h2>
-              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-2 my-10">
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-24 w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <hr className="border border-2 border-white" />
-            </div>
-          </div>
-
-          <Blog />
-          <FeaturesHome />
+            <Blog />
+        
           <FeaturesBlocks />
           <Testimonials />
           <Newsletter />

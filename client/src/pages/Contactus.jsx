@@ -8,11 +8,11 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Blog from "../partials/Blog";
+import Blog from "../partials/BlogCard";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 
-// react icons 
-import { FaWhatsapp,FaPhoneFlip   } from "react-icons/fa6";
+// react icons
+import { FaWhatsapp, FaPhoneFlip } from "react-icons/fa6";
 
 // form imports
 import { useState } from "react";
@@ -42,19 +42,28 @@ const ContactContent = () => {
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              We love connecting with the people and sharing creative ideas and thoughts every time you’ll connect with us! Feel free to connect with us anytime here or send your query to us. We’ll get back to you super soon.
+              We love connecting with the people and sharing creative ideas and
+              thoughts every time you’ll connect with us! Feel free to connect
+              with us anytime here or send your query to us. We’ll get back to
+              you super soon.
             </p>
-      
+
             <div
               className="text-lg text-gray-100 mb-8 lg:text-start mg:text-center"
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              <p className="text-sm text-gray-600">digiDZN - Digital Marketing Company in Delhi</p>
-              <p className="text-sm text-gray-600">Address - G-4, 1st Floor, Lawrence Road Industrial Area.</p>
-              <p className="text-sm text-gray-600">Phone Number - 9868877018 / 9289745760</p>
+              <p className="text-sm text-gray-600">
+                digiDZN - Digital Marketing Company in Delhi
+              </p>
+              <p className="text-sm text-gray-600">
+                Address - G-4, 1st Floor, Lawrence Road Industrial Area.
+              </p>
+              <p className="text-sm text-gray-600">
+                Phone Number - 9868877018 / 9289745760
+              </p>
             </div>
-      
+
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-start mt-4"
               data-aos="zoom-y-out"
@@ -65,8 +74,10 @@ const ContactContent = () => {
                   className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0 flex items-center gap-x-2"
                   to="/"
                 >
-                    <span>Lets Chat</span>
-                   <span><FaWhatsapp className="text-xl"/></span>
+                  <span>Lets Chat</span>
+                  <span>
+                    <FaWhatsapp className="text-xl" />
+                  </span>
                 </Link>
               </div>
               <div>
@@ -74,10 +85,10 @@ const ContactContent = () => {
                   className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 flex  items-center gap-x-2"
                   to="tel:#"
                 >
-                   <span>call</span>
-                   <span><FaPhoneFlip  /></span>
-                   
-                   
+                  <span>call</span>
+                  <span>
+                    <FaPhoneFlip />
+                  </span>
                 </Link>
               </div>
             </div>
@@ -89,12 +100,10 @@ const ContactContent = () => {
       <div>
         <div className="bg-white">
           <div className="isolate bg-white px-6 py-12 sm:pt-12 lg:px-8">
-            
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-2xl md:text-start sm:text-center font-bold tracking-tight text-gray-900 sm:text-3xl">
-              Ready to chat with our growth experts?
+                Ready to chat with our growth experts?
               </h2>
-         
             </div>
             <form
               action="#"
@@ -102,7 +111,7 @@ const ContactContent = () => {
               className="mx-auto mt-8 max-w-xl sm:mt-12"
             >
               <div className="grid grid-cols-1  gap-y-6 sm:grid-cols-1">
-              {/* full Name  */}
+                {/* full Name  */}
                 <div>
                   <label
                     htmlFor="first-name"
@@ -122,8 +131,7 @@ const ContactContent = () => {
                     />
                   </div>
                 </div>
-             
-            
+
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
@@ -257,11 +265,17 @@ function Contactus() {
 
           {/* map section  */}
           <div className="google-map-code">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.3069656980992!2d76.68566937557951!3d30.709769674595375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee57aaaaaa93%3A0x326ffb09498c00a!2sTDS%20TOWER!5e0!3m2!1sen!2sin!4v1709552703708!5m2!1sen!2sin" width="100%" height="450" style={{ border: 0 }}allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.3069656980992!2d76.68566937557951!3d30.709769674595375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee57aaaaaa93%3A0x326ffb09498c00a!2sTDS%20TOWER!5e0!3m2!1sen!2sin!4v1709552703708!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
-
-         
           <Blog />
           <FeaturesBlocks />
           <Testimonials />

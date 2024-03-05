@@ -8,7 +8,7 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Blog from "../partials/Blog";
+import Blog from "../partials/BlogCard";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 
 const HomeContent = () => {
@@ -170,16 +170,13 @@ function Home() {
             </div>
           </div>
 
-          
-          <Blog/>
+          <Blog />
           <FeaturesHome />
 
-           {/* Tech fields */}
-
+          {/* Tech fields */}
 
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-
               <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
                 Full Growth Capabilities
               </h2>
@@ -246,7 +243,6 @@ function Home() {
             </div>
           </div>
 
-          
           <FeaturesBlocks />
           <Testimonials />
           <Newsletter />

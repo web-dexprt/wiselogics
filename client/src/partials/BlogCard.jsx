@@ -9,7 +9,7 @@ function Blog() {
     <section className="relative bg-white">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:py-20 sm:py-10">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
@@ -17,26 +17,26 @@ function Blog() {
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-3 md:gap-6 gap-x-10">
+          <div className="md:grid md:grid-cols-3 md:gap-6 gap-x-10 gap-y-5">
             {/* cards contents  */}
             {/* card 1 */}
-            <div className="w-auto h-96 ">
+            <div className="w-auto h-96 hover:cursor-pointer">
               <img
                 className="h-full w-full object-cover object-center"
                 src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"
                 alt=""
               />
             </div>
+
             {/* card 2 */}
-            <div className="w-auto h-96 ">
+            <div className="w-auto h-96 hover:cursor-pointer">
               <img
-                className="h-full w-full object-cover object-center"
                 src="https://digidzn.com/static/media/delievers2.ed09c3ef.jpeg"
                 alt=""
               />
             </div>
             {/* card 3 */}
-            <div className="w-auto h-96 ">
+            <div className="w-auto h-96 hover:cursor-pointer">
               <img
                 className="h-full w-full object-cover object-center"
                 src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"

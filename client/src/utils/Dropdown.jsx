@@ -1,60 +1,140 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Transition from '../utils/Transition';
+import React, { useState, useEffect, Fragment } from "react";
 
-import { Link } from 'react-router-dom';
+import { Popover, Transition } from "@headlessui/react";
+import {
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+} from "@heroicons/react/20/solid";
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+} from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
-function Dropdown({
-  children,
-  title
-}) {
+const solutions = [
+  {
+    name: "Analytics",
+    description: "Get a better understanding of your traffic",
+    href: "#",
+    icon: ChartPieIcon,
+  },
+  {
+    name: "Engagement",
+    description: "Speak directly to your customers",
+    href: "#",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Security",
+    description: "Your customers' data will be safe and secure",
+    href: "#",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Integrations",
+    description: "Connect with third-party tools",
+    href: "#",
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: "Automations",
+    description: "Build strategic funnels that will convert",
+    href: "#",
+    icon: ArrowPathIcon,
+  },
+];
+const callsToAction = [
+  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
+  { name: "Contact sales", href: "#", icon: PhoneIcon },
+];
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+export default function Dropdown({ title }) {
+  const [top, setTop] = useState(true);
 
+  // detect whether user has scrolled the page down by 10px
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.pageYOffset > 10 ? setTop(false) : setTop(true);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [top]);
 
   return (
-    <li
-      className="relative"
-      onMouseEnter={() => setDropdownOpen(true)}
-      onMouseLeave={() => setDropdownOpen(false)}
-      onFocus={() => setDropdownOpen(true)}
-      onBlur={() => setDropdownOpen(false)}
-    >
-      <Link
-        className="text-gray-300 hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-        
-        aria-expanded={dropdownOpen}
-        onClick={(e) => e.preventDefault()}
-      >
-        {title}
-        <svg className="w-3 h-3 fill-current text-gray-500 cursor-pointer ml-1 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
-        </svg>
-      </Link>
-      {/* content  */}
+    <Popover className="relative">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+        <span
+          className={` ${
+            !top
+              ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+              : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+          }`}
+        >
+          {title}
+        </span>
+        <ChevronDownIcon className="h-5 w-5 text-white" aria-hidden="true" />
+      </Popover.Button>
+
       <Transition
-        show={dropdownOpen}
-        tag="ul"
-        className="origin-top-right absolute top-full right-0 w-96 bg-white text-black text-center py-2 ml-4 rounded shadow-lg"
-        enter="transition ease-out duration-200 transform"
-        enterStart="opacity-0 -translate-y-2"
-        enterEnd="opacity-100 translate-y-0"
-        leave="transition ease-out duration-200"
-        leaveStart="opacity-100"
-        leaveEnd="opacity-0"
+        as={Fragment}
+        enter="transition ease-out duration-200"
+        enterFrom="opacity-0 translate-y-1"
+        enterTo="opacity-100 translate-y-0"
+        leave="transition ease-in duration-150"
+        leaveFrom="opacity-100 translate-y-0"
+        leaveTo="opacity-0 translate-y-1"
       >
-        {children}
+        <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-black  text-sm leading-6 shadow-lg ring-1 ">
+            <div className="p-4">
+              {solutions.map((item) => (
+                <div
+                  key={item.name}
+                  className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                >
+                  <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <item.icon
+                      className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div>
+                    <Link
+                      href={item.href}
+                      className="font-semibold text-white hover:text-black"
+                    >
+                      {item.name}
+                      <span className="absolute inset-0" />
+                    </Link>
+                    <p className="mt-1 text-gray-600 text-white hover:text-black">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+              {callsToAction.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
+                >
+                  <item.icon
+                    className="h-5 w-5 flex-none text-gray-400"
+                    aria-hidden="true"
+                  />
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </Popover.Panel>
       </Transition>
-    </li>
+    </Popover>
   );
 }
-
-export default Dropdown;
-
-Dropdown.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element.isRequired
-  ]),
-  title: PropTypes.string.isRequired,
-};

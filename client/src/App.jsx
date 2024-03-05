@@ -16,7 +16,7 @@ import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import Blog from "./pages/Blog";
 import Service from "./pages/Service";
-import OurWork from "./pages/work";
+import OurWork from "./pages/OurWork";
 
 
 function App() {

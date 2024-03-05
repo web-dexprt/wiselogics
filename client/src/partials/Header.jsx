@@ -118,6 +118,7 @@ const WorkList = () => {
   );
 };
 
+
 function Header() {
   const [top, setTop] = useState(true);
 
@@ -161,7 +162,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   About us
@@ -172,7 +173,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   <Dropdown title={"Services"} children={<ServicesList />} />
@@ -184,7 +185,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   <Dropdown title={"Our Work"} children={<WorkList />} />
@@ -196,7 +197,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium  text-white hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   Blog
@@ -208,7 +209,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium text-white hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   Contact us
@@ -221,7 +222,7 @@ function Header() {
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-gray-300 hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium text-white hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   <span>Sign In</span>
