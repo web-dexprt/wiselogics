@@ -2,32 +2,36 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
-
-
 const ServicesList = () => {
   return (
-    <ul className="px-2 h-72 overflow-y-auto">
+    <ul className="px-2 h-72 overflow-y-auto bg-themeColor">
       {/* Web Development */}
       <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
         <h3 className="text-start text-bold ">Web Development</h3>
         <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">
-            CMS Web Development
+          <li className="text-gray-700 hover:bg-white p-1 ">
+            <Link to={"/service/cmd"}>CMS Web Development</Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            WordPress Development
+            <Link to={"/service/wordpress-development"}>
+              WordPress Development
+            </Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            E-commerce Development
+            <Link to={"/service/ecommerce"}>E-commerce Development</Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Website Optimization
+            <Link to={"/service/web-optimization"}>Website Optimization</Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Mobile App Development
+            <Link to={"/service/mobile-development"}>
+              Mobile App Development
+            </Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Full Stack Development
+            <Link to={"/service/full-stack-development"}>
+              Full Stack Development
+            </Link>
           </li>
         </ul>
       </li>
@@ -36,12 +40,18 @@ const ServicesList = () => {
         <h3 className="text-start text-bold">Web Design</h3>
         <ul className="text-sm text-start pl-5">
           <li className="text-gray-700 hover:bg-white p-1">
-            Responsive Website/ Mobile Design
+            <Link to={"/service/responsive-website"}>
+              Responsive Website/ Mobile Design
+            </Link>
           </li>
-          <li className="text-gray-700 hover:bg-white p-1">UI/UX Design</li>
-          <li className="text-gray-700 hover:bg-white p-1">Graphic Design</li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Landing Page Design
+            <Link to={"/service/ui-design"}>UI/UX Design</Link>
+          </li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/service/graphic-design"}>Graphic Design</Link>
+          </li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/service/landing-pages"}>Landing Page Design</Link>
           </li>
         </ul>
       </li>
@@ -50,26 +60,40 @@ const ServicesList = () => {
         <h3 className="text-start text-bold">Digital Marketing Solutions</h3>
         <ul className="text-sm text-start pl-5">
           <li className="text-gray-700 hover:bg-white p-1">
-            Organic Search - SEO (Search Engine Optimisation)
+            <Link to={"/service/seo"}>
+              Organic Search - SEO (Search Engine Optimisation)
+            </Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Social Media Marketing
+            <Link to={"/service/social-media-marketing"}>
+              Social Media Marketing
+            </Link>
           </li>
           <li className="text-gray-700 hover:bg-white p-1">
-            Content Marketing
+            <Link to={"/service/content-marketing"}>Content Marketing</Link>
           </li>
-          <li className="text-gray-700 hover:bg-white p-1">Email Marketing</li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/service/email-marketing"}>Email Marketing</Link>
+          </li>
         </ul>
       </li>
       {/* Digital Ads */}
       <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
-        <h3 className="text-start text-bold">Digital Ads</h3>
+        <h3 className="text-start text-bold">
+          <Link to={"/service/digital-ads"}>Digital Ads</Link>
+        </h3>
         <ul className="text-sm text-start pl-5">
           <li className="text-gray-700 hover:bg-white p-1">
-            Affiliate Marketing Services
+            <Link to={"/service/affiliate-marketing-services"}>
+              Affiliate Marketing Services
+            </Link>
           </li>
-          <li className="text-gray-700 hover:bg-white p-1">Social Media Ads</li>
-          <li className="text-gray-700 hover:bg-white p-1">PPC Ads</li>
+          <li className="text-gray-700 hover:bg-white p-1 ">
+            <Link to={"/service/social-media-ads"}>Social Media Ads</Link>
+          </li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/service/ppc-ads"}>PPC Ads</Link>
+          </li>
         </ul>
       </li>
     </ul>
@@ -82,8 +106,12 @@ const WorkList = () => {
       {/* Web Development */}
       <li className="text-bold bg-slate-200 text-black p-2 rounded-md mb-2">
         <ul className="text-sm text-start pl-5">
-          <li className="text-gray-700 hover:bg-white p-1">Case Studies</li>
-          <li className="text-gray-700 hover:bg-white p-1">Testimonials</li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/our-work/case-studies"}>Case Studies</Link>
+          </li>
+          <li className="text-gray-700 hover:bg-white p-1">
+            <Link to={"/our-work/testimonials"}>Testimonials</Link>
+          </li>
         </ul>
       </li>
     </ul>

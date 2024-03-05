@@ -15,6 +15,8 @@ import ResetPassword from "./pages/ResetPassword";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import Blog from "./pages/Blog";
+import Service from "./pages/Service";
+import OurWork from "./pages/work";
 
 
 function App() {
@@ -42,6 +44,9 @@ function App() {
         <Route exact path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contactus/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/blog/:id" element={<Blog/>}/>
+        <Route path="/service/:id" element={<Service/>}/>
+        <Route path="/our-work/:id" element={<OurWork/>}/>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
