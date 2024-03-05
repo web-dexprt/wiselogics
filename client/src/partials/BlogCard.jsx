@@ -4,7 +4,7 @@ import Transition from "../utils/Transition";
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
 
-function Blog() {
+function BlogCard() {
   return (
     <section className="relative bg-white">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -50,4 +50,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default BlogCard;

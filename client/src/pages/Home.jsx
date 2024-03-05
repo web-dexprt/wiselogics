@@ -8,7 +8,7 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Blog from "../partials/BlogCard";
+import BlogCard from "../partials/BlogCard";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 
 const HomeContent = () => {
@@ -45,7 +45,7 @@ const HomeContent = () => {
             <div>
               <Link
                 className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                href="#0"
+                href="/contact-us"
               >
                 Let’s Connect (CTA)
               </Link>
@@ -53,7 +53,7 @@ const HomeContent = () => {
             <div>
               <Link
                 className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                href="#0"
+                href="/our-work"
               >
                 Learn more
               </Link>
@@ -170,7 +170,7 @@ function Home() {
             </div>
           </div>
 
-          <Blog />
+          <BlogCard />
           <FeaturesHome />
 
           {/* Tech fields */}
