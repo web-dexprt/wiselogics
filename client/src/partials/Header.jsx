@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
+// wiselogics 
+import wiselogicslogo from "../assets/logo/wiselogicslogo.png"
+import wiselogicswhitebg from "../assets/logo/wiselogicslogo-bg-white.png"
+
+
+
 // react icons
 import {
   ChevronDownIcon,
@@ -112,10 +118,10 @@ function Header() {
                   className="h-16 w-auto object-cover object-center"
                   src={
                     !top
-                      ? "src/images/wiselogicslogo-bg-white.png"
-                      : "src/images/wiselogicslogo.png"
+                      ? `${wiselogicswhitebg}`
+                      : `${wiselogicslogo}`
                   }
-                  alt="wiselogicslogo"
+                  alt="WiseLogics"
                 />
               </div>
             </Link>
