@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
 import FeaturesHome from "../partials/Features";
@@ -8,14 +8,16 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-import Blog from "../partials/BlogCard";
+
 
 import { useServiceData } from "../ServiceDataContext";
 
 const ServiceContent = () => {
   const serviceData = useServiceData();
-
-  console.log(serviceData);
+  const { id } = useParams();
+  console.log(id);
+  const service = serviceData.find((s) => s.id === id);
+  console.log(service);
   return (
     <>
       <div className="text-center pb-12 md:pb-0">

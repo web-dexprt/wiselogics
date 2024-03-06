@@ -23,6 +23,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 function Header() {
+  
   //  Navigation button
   const ServicesList = [
     {
@@ -49,12 +50,7 @@ function Header() {
       href: "/service/digital-ads",
       icon: SquaresPlusIcon,
     },
-    {
-      name: "SEO",
-      description: "SEO services",
-      href: "/service/seo",
-      icon: ArrowPathIcon,
-    },
+  
   ];
 
   const WorkList = [
