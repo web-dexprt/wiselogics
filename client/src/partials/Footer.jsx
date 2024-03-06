@@ -196,7 +196,7 @@ function Footer() {
             <p className="text-sm text-gray-600 mb-4">
               Get the latest news and articles to your inbox every month.
             </p>
-            <form onSubmit={"to:akshitdhakad7400@gmail.com"}>
+            <form >
               <div className="flex flex-wrap mb-4">
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">

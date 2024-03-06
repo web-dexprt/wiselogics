@@ -19,6 +19,7 @@ import Service from "./pages/Service";
 import OurWork from "./pages/OurWork";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ErrorPage from "./pages/ErrorPage";
+import { ServiceDataProvider } from "./ServiceDataContext";
 
 function App() {
   const location = useLocation();
@@ -40,20 +41,22 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about-us" element={<About />} />
-        <Route path="/contact-us" element={<Contactus />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<Blog />} />
-        <Route path="/service/:id" element={<Service />} />
-        <Route path="/our-work" element={<OurWork />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <ServiceDataProvider>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contactus />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/service/:id" element={<Service />} />
+          <Route path="/our-work" element={<OurWork />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </ServiceDataProvider>
     </>
   );
 }
