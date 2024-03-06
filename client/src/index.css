@@ -6,6 +6,8 @@ body,html{
     background-color: #000000 !important;
     padding:0px !important;
     margin: 0px !important;
+    min-width: 526px;
+    min-height: 100vh;
 }
 
 *{
