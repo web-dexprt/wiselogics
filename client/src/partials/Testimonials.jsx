@@ -9,32 +9,36 @@ function Testimonials() {
       imgURL:
         "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
-        " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo repellat ipsum quas itaque dolore fuga atque totam ab consequuntur maxime nobis expedita ratione facere deleniti dolores, recusandae odit illo! Corporis excepturi consequatur, alias exercitationem quae ullam, tempora voluptatem aliquid, sequi laboriosam inventore incidunt. Ratione ut possimus optio voluptate, velit quidem cumque ab dignissimos iusto fuga accusamus, eveniet aliquam suscipit ipsum perspiciatis molestiae reiciendis deserunt harum, reprehenderit praesentium? Tenetur, corrupti aperiam numquam quis esse accusantium ipsum, error repudiandae asperiores consequatur doloremque quidem praesentium illo voluptates minima molestiae mollitia vero fugiat aliquid animi aliquam perspiciatis labore? Voluptas harum nisi eligendi natus odio. Enim, itaque",
       jobDescription: "CEO & Co-Founder",
+      companyName: "Google",
     },
     {
       name: "Vipin",
-      imgURl:
-        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
+      imgURL:
+        "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
       description:
-        " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+        "Ratione magnam dolores earum veniam ut ab eaque consectetur beatae soluta sequi rerum non, inventore eius, deserunt dicta repellendus aliquid? Hic qui quis, aperiam repellendus natus ab maxime unde quia, repudiandae, libero aliquam? Facilis, tenetur officiis, debitis aliquam excepturi enim vitae, quis odit necessitatibus maxime nesciunt iste. Itaque, excepturi dolorum. ",
       jobDescription: "CEO & Co-Founder",
+      companyName: "Facebook",
     },
     {
       name: "Harry",
-      imgURl:
-        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
+      imgURL:
+        "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
       description:
-        " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
-      jobDescription: "CEO & Co-Founder",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
+      jobDescription: "HR Manager",
+      companyName: "Amazon",
     },
     {
       name: "Jake",
-      imgURl:
-        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
+      imgURL:
+        "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
       description:
-        " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       jobDescription: "CEO & Co-Founder",
+      companyName: "Microsoft",
     },
   ];
 
@@ -48,9 +52,8 @@ function Testimonials() {
     return () => clearInterval(interval);
   }, [currentTestimonial]);
 
-  const { name, imgURL, description, jobDescription } =
+  const { name, imgURL, description, jobDescription, companyName } =
     testimonialData[currentTestimonial];
-
 
   return (
     <section className="relative">
@@ -97,8 +100,7 @@ function Testimonials() {
               Trusted by over 20,000 companies all over the world
             </h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">
-              Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar
-              mattis blandit libero cursus mattis.
+              Here are what some of our customers have to say about our services
             </p>
           </div>
 
@@ -171,32 +173,34 @@ function Testimonials() {
           </div>
 
           {/* Testimonials */}
-          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+          <div className="max-w-4xl mx-auto mt-20" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
               {/* Testimonial */}
               <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
                 <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
                   <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
-                    <div className="absolute top-[-45px] -mt-8 left-1/2 transform -translate-x-1/2">
-                    <div className="h-24 w-24">
-                      <img
-                        className="w-full h-full object-cover object-center clasrelative rounded-full"
-                        src={imgURL}
-                        alt="Testimonial"
-                      />
+                    <div className="absolute top-[-125px] rounded-full -mt-8 left-1/2 transform -translate-x-1/2 bg-white p-2">
+                      <div className="h-32 w-32">
+                        <img
+                          className="w-full h-full object-cover object-center clasrelative rounded-full"
+                          src={imgURL}
+                          alt="Testimonial"
+                        />
                       </div>
                     </div>
                     <blockquote className="text-xl font-medium mb-4">
-                      “ {description} “
+                      “ {description.slice(0, 220)} ...“
                     </blockquote>
                     <cite className="block font-bold text-lg not-italic mb-1">
                       {name}
                     </cite>
-                    <div className="text-gray-600">
+                    <div className="text-gray-600 flex gap-x-1 justify-center">
                       <span>{jobDescription}</span>
+                      <span className="text-blue-600">@{companyName}</span>
                     </div>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>
