@@ -57,8 +57,8 @@ function Home() {
           <HeroHome>
             <HomeContent />
           </HeroHome>
-            <Blog />
-        
+
+          <Blog title={"OUR LATEST BLOGS"} />
           <FeaturesBlocks />
           <Testimonials />
           <Newsletter />
