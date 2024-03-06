@@ -246,7 +246,7 @@ function Footer() {
             <li>
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-300 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
                 <FaXTwitter className="text-2xl p-1"/>
@@ -255,7 +255,7 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-300 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-blue-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >
                 <FaFacebook className="text-2xl p-1"/> 
@@ -265,7 +265,7 @@ function Footer() {
               <Link
                 to="https://www.instagram.com/p/C4IgEIxB3av/?igsh=MWs5dHR2cjl4anhrbw=="
                 target="_blank"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-300 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Instagram"
               >
                 <FaInstagram  className="text-2xl p-1"/> 
@@ -275,10 +275,10 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-300 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-blue-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Pintrest"
               >
-                <FaPinterest className="text-2xl p-1"/>
+                <FaPinterest className="text-2xl p-1 "/>
               </Link>
             </li>
           </ul>

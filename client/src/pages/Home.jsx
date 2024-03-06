@@ -250,8 +250,6 @@ function Home() {
           <ContactSupport />
         </main>
 
-        <Banner />
-
         {/*  Site footer */}
         <Footer />
       </div>

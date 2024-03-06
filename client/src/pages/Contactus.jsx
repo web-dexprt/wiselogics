@@ -53,14 +53,16 @@ const ContactContent = () => {
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              <p className="text-sm text-gray-600">
-                digiDZN - Digital Marketing Company in Delhi
+              <p className="text-sm text-gray-600 hover:text-white hover:cursor-pointer">
+                <span className="font-bold">WiseLogics</span> - Digital
+                Marketing Company in Mohali .
               </p>
-              <p className="text-sm text-gray-600">
-                Address - G-4, 1st Floor, Lawrence Road Industrial Area.
+              <p className="text-sm text-gray-600 hover:text-white hover:cursor-pointer">
+                Address - E-193, Phase 8B, Industrial Area, Sector 74, Sahibzada
+                Ajit Singh Nagar, Punjab 160055.
               </p>
-              <p className="text-sm text-gray-600">
-                Phone Number - 9868877018 / 9289745760
+              <p className="text-sm text-gray-600 hover:text-white hover:cursor-pointer">
+                Phone Number - +91 8219066645 / 9289745760
               </p>
             </div>
 
@@ -72,7 +74,7 @@ const ContactContent = () => {
               <div>
                 <Link
                   className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0 flex items-center gap-x-2"
-                  to="/"
+                  to=" https://wa.me/918219066645"
                 >
                   <span>Lets Chat</span>
                   <span>
@@ -82,8 +84,8 @@ const ContactContent = () => {
               </div>
               <div>
                 <Link
-                  className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 flex  items-center gap-x-2"
-                  to="tel:#"
+                  className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 flex  items-center gap-x-3"
+                  to="tel:918219066645"
                 >
                   <span>call</span>
                   <span>
