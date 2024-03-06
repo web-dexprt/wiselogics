@@ -26,7 +26,7 @@ function Footer() {
             </div>
             <div className="text-sm text-white">
               <Link
-                to="/terms-condition"
+                to="/privacy-policy"
                 className="text-white hover:text-gray-300 hover:underline transition duration-150 ease-in-out"
               >
                 Terms
@@ -49,42 +49,42 @@ function Footer() {
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
-                  to="/web-studio"
+                  to="/service/web-development"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  Web Studio
+                  Web Development
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to={"/service/web-design"}
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  DynamicBox Flex
+                  Web Design
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to={"/service/digital-marketing"}
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  Programming Forms
+                  Digital Marketing Solutions
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to={"/service/digital-ads"}
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  Integrations
+                  Digital Ads
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to={"/service/seo"}
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  Command-line
+                  Seo(Search Engine Optimization)
                 </Link>
               </li>
             </ul>
@@ -114,7 +114,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/blog"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
                   Blog
@@ -122,7 +122,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/contact-us"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
                   Support Center
@@ -147,7 +147,7 @@ function Footer() {
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
                   Home
@@ -155,7 +155,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/about-us"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
                   About us
@@ -171,15 +171,15 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/contact-us"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
-                  Pricing
+                  Contact-us
                 </Link>
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/privacy-policy"
                   className="text-gray-600 hover:text-gray-300 transition duration-150 ease-in-out"
                 >
                   Privacy Policy
@@ -196,7 +196,7 @@ function Footer() {
             <p className="text-sm text-gray-600 mb-4">
               Get the latest news and articles to your inbox every month.
             </p>
-            <form>
+            <form onSubmit={"to:akshitdhakad7400@gmail.com"}>
               <div className="flex flex-wrap mb-4">
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">

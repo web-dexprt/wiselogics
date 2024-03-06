@@ -17,6 +17,7 @@ import Contactus from "./pages/Contactus";
 import Blog from "./pages/Blog";
 import Service from "./pages/Service";
 import OurWork from "./pages/OurWork";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/service/:id" element={<Service />} />
         <Route path="/our-work/:id" element={<OurWork />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />

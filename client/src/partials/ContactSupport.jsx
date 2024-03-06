@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ContactSupport() {
   return (
-    <div className="bg-yellow-300 py-8">
+    <div className="bg-yellow-300 py-8 my-2">
       <div className="max-w-6xl mx-auto px-8 sm:px-6 grid md:grid-cols-2 gap-x-10 gap-y-5">
         <div className="">
           <div className="text-xl font-bold mb-2">it Feels Good</div>
