@@ -9,7 +9,6 @@ import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
 
-
 import { useServiceData } from "../ServiceDataContext";
 
 const ServiceContent = () => {
@@ -25,11 +24,11 @@ const ServiceContent = () => {
           className="text-4xl md:text-4xl text-center sm:text-start text-white font-extrabold leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
-          Strategy SEO to Power your &nbsp;
+          &nbsp;
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-            Business
+            {service.title}
           </span>
-          &nbsp; Intersection
+          &nbsp;
         </h1>
         <div className="max-w-6xl mx-auto">
           <p
@@ -37,9 +36,7 @@ const ServiceContent = () => {
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
-            Search Engine Optimization is an evolving science to improve your
-            page rank. SEO is a process of increasing the visibility of the
-            website in a web search engine organically.
+            {service.description}
           </p>
         </div>
       </div>
