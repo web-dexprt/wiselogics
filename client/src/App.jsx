@@ -45,6 +45,7 @@ function App() {
         <Route exact path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contactus />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<Blog />} />
         <Route path="/service/:id" element={<Service />} />
         <Route path="/our-work" element={<OurWork />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
