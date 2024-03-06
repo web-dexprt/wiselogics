@@ -16,7 +16,7 @@ const HomeContent = () => {
     <>
       <div className="text-center pb-12 md:pb-16">
         <h1
-          className="text-5xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-4"
+          className="text-4xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
           Transform your businesses into Brands, With &nbsp;
@@ -27,7 +27,7 @@ const HomeContent = () => {
         </h1>
         <div className="max-w-3xl mx-auto">
           <p
-            className="text-xl text-gray-300 mb-8"
+            className="text-md md:text-xl text-gray-300 mb-8"
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
@@ -100,64 +100,64 @@ function Home() {
           </HeroHome>
 
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
+            <div className="pt-16 md:pt-32 pb-12 md:pt-40 md:pb-20 ">
               <hr className="border border-2 border-white mb-10" />
 
-              <h2 className="text-white text-3xl pr-10 font-bold">
+              <h2 className="text-white text-2xl lg:text-3xl pr-10 font-bold">
                 Established corporates to well-known Retail brands to startups -
                 we have served them all.
               </h2>
-              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-2 my-10">
-                <div className="h-24 w-56">
+              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center my-10 ">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
@@ -180,57 +180,57 @@ function Home() {
               <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
                 Full Growth Capabilities
               </h2>
-              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-2 my-10">
-                <div className="h-24 w-56">
+              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center my-10 ">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
                     alt=""
                   />
                 </div>
-                <div className="h-24 w-56">
+                <div className="h-48 w-full sm:h-24 sm:w-56">
                   <img
                     className="h-full w-full object-cover object-center"
                     src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"

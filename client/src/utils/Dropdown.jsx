@@ -70,7 +70,7 @@ export default function Dropdown({ title, solutions }) {
                   </div>
                   <div className=" text-white hover:text-black">
                     <Link
-                      href={item.href}
+                      to={item.href}
                       className="font-semibold text-white hover:text-black"
                     >
                       {item.name}

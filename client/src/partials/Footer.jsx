@@ -15,7 +15,7 @@ function Footer() {
                 <div className="h-24 w-auto">
                   <img
                     className="w-full h-full object-cover object-center"
-                    src="src\images\wiselogicslogo.jpeg"
+                    src="src\images\wiselogicslogo.png"
                     alt=""
                   />
                 </div>

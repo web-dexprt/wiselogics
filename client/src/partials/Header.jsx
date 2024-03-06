@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
-// react icons 
+// react icons
 import {
   ChevronDownIcon,
   PhoneIcon,
@@ -16,40 +16,37 @@ import {
   SquaresPlusIcon,
 } from "@heroicons/react/24/outline";
 
-
-
 function Header() {
-
-  //  Navigation button 
+  //  Navigation button
   const ServicesList = [
     {
       name: "Web Development",
       description: "We build fast and secure websites",
-      href: "/services/web-development",
+      href: "/service/web-development",
       icon: ChartPieIcon,
     },
     {
       name: "Web Design",
       description: "Web design and development services",
-      href: "/services/web-design",
+      href: "/service/web-design",
       icon: CursorArrowRaysIcon,
     },
     {
       name: "Digital Marketing",
       description: "Digital marketing services",
-      href: "/services/digital-marketing",
+      href: "/service/digital-marketing",
       icon: FingerPrintIcon,
     },
     {
       name: "Digital Ads",
       description: "Digital ads services",
-      href: "/services/digital-ads",
+      href: "/service/digital-ads",
       icon: SquaresPlusIcon,
     },
     {
       name: "SEO",
       description: "SEO services",
-      href: "/services/seo",
+      href: "/service/seo",
       icon: ArrowPathIcon,
     },
   ];
@@ -86,10 +83,6 @@ function Header() {
       icon: ArrowPathIcon,
     },
   ];
-
-
-
-
 
   const [top, setTop] = useState(true);
 
@@ -129,7 +122,7 @@ function Header() {
           </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
+          <nav className="hidden lg:flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link
@@ -144,7 +137,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link
+                <div
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
@@ -152,11 +145,11 @@ function Header() {
                   }`}
                 >
                   <Dropdown title={"Our Expertise"} solutions={ServicesList} />
-                </Link>
+                </div>
               </li>
 
               <li>
-                <Link
+                <div
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
@@ -164,7 +157,7 @@ function Header() {
                   }`}
                 >
                   <Dropdown title={"Our Work"} solutions={WorkList} />
-                </Link>
+                </div>
               </li>
               <li>
                 <Link

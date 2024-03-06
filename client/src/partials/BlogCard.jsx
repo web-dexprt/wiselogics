@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition";
-
+import { Link } from "react-router-dom";
 import FeaturesBg from "../images/features-bg.png";
 import FeaturesElement from "../images/features-element.png";
 
@@ -17,31 +17,38 @@ function BlogCard() {
           </div>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-3 md:gap-6 gap-x-10 gap-y-5">
+          <div className="grid md:grid-cols-3 md:gap-6 gap-10">
             {/* cards contents  */}
             {/* card 1 */}
-            <div className="w-auto h-96 hover:cursor-pointer">
-              <img
-                className="h-full w-full object-cover object-center"
-                src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"
-                alt=""
-              />
+            <div className="w-auto h-72 md:h-56 lg:h-96 hover:cursor-pointer">
+              <Link to={"/blog"}>
+                <img
+                  className="h-full w-full object-cover object-center"
+                  src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"
+                  alt=""
+                />
+              </Link>
             </div>
 
             {/* card 2 */}
-            <div className="w-auto h-96 hover:cursor-pointer">
-              <img
-                src="https://digidzn.com/static/media/delievers2.ed09c3ef.jpeg"
-                alt=""
-              />
+            <div className="w-auto h-72 md:h-56 lg:h-96 hover:cursor-pointer">
+              <Link to={"/blog"}>
+                <img
+                  className="h-full w-full object-cover object-center"
+                  src="https://digidzn.com/static/media/delievers2.ed09c3ef.jpeg"
+                  alt=""
+                />
+              </Link>
             </div>
             {/* card 3 */}
-            <div className="w-auto h-96 hover:cursor-pointer">
-              <img
-                className="h-full w-full object-cover object-center"
-                src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"
-                alt=""
-              />
+            <div className="w-auto h-72 md:h-56 lg:h-96 hover:cursor-pointer">
+              <Link to={"/blog"}>
+                <img
+                  className="h-full w-full object-cover object-center"
+                  src="https://digidzn.com/static/media/delievers16.430c3fb3.jpg"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
         </div>
