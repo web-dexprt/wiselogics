@@ -155,15 +155,16 @@ function Header() {
               </li>
 
               <li>
-                <div
+                <Link
+                  to="/our-work"
                   className={` ${
                     !top
                       ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
-                  <Dropdown title={"Our Work"} solutions={WorkList} />
-                </div>
+                  Our Work
+                </Link>
               </li>
               <li>
                 <Link
