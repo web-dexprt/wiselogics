@@ -6,8 +6,8 @@ function Testimonials() {
   const testimonialData = [
     {
       name: "Jhon Doe",
-      imgURl:
-        "https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+      imgURL:
+        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
         " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
       jobDescription: "CEO & Co-Founder",
@@ -15,7 +15,7 @@ function Testimonials() {
     {
       name: "Vipin",
       imgURl:
-        "https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
         " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
       jobDescription: "CEO & Co-Founder",
@@ -23,7 +23,7 @@ function Testimonials() {
     {
       name: "Harry",
       imgURl:
-        "https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
         " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
       jobDescription: "CEO & Co-Founder",
@@ -31,7 +31,7 @@ function Testimonials() {
     {
       name: "Jake",
       imgURl:
-        "https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+        "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
         " I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
       jobDescription: "CEO & Co-Founder",
@@ -43,7 +43,7 @@ function Testimonials() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((currentTestimonial + 1) % testimonialData.length);
-    }, 3000); // Change every 3 seconds
+    }, 5000); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, [currentTestimonial]);
@@ -177,14 +177,14 @@ function Testimonials() {
               <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
                 <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
                   <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
-                    <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                    <div className="absolute top-[-45px] -mt-8 left-1/2 transform -translate-x-1/2">
+                    <div className="h-24 w-24">
                       <img
-                        className="relative rounded-full"
+                        className="w-full h-full object-cover object-center clasrelative rounded-full"
                         src={imgURL}
-                        width="96"
-                        height="96"
                         alt="Testimonial"
                       />
+                      </div>
                     </div>
                     <blockquote className="text-xl font-medium mb-4">
                       “ {description} “
