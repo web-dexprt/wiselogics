@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-// style  csss 
+// style  csss
 import "aos/dist/aos.css";
 import "./css/style.css";
 
 import AOS from "aos";
 
-// Routes 
+// Routes
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -17,7 +17,7 @@ import Contactus from "./pages/Contactus";
 import Blog from "./pages/Blog";
 import Service from "./pages/Service";
 import OurWork from "./pages/OurWork";
-
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const location = useLocation();
@@ -42,14 +42,15 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about-us" element={<About />} />
-        <Route path="/contact-us" element={<Contactus/>}/>
-        <Route path="/blog" element={<Blog/>}/>
-        <Route path="/blog/:id" element={<Blog/>}/>
-        <Route path="/service/:id" element={<Service/>}/>
-        <Route path="/our-work/:id" element={<OurWork/>}/>
+        <Route path="/contact-us" element={<Contactus />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/service/:id" element={<Service />} />
+        <Route path="/our-work/:id" element={<OurWork />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );

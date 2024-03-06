@@ -5,41 +5,33 @@ import TestimonialImage from "../images/testimonial.jpg";
 function Testimonials() {
   const testimonialData = [
     {
-      name: "Jhon Doe",
+      name: "Naveen Kumar",
       imgURL:
         "https://i.insider.com/5d2f876fb44ce746713e62ee?width=600&format=jpeg&auto=webp",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo repellat ipsum quas itaque dolore fuga atque totam ab consequuntur maxime nobis expedita ratione facere deleniti dolores, recusandae odit illo! Corporis excepturi consequatur, alias exercitationem quae ullam, tempora voluptatem aliquid, sequi laboriosam inventore incidunt. Ratione ut possimus optio voluptate, velit quidem cumque ab dignissimos iusto fuga accusamus, eveniet aliquam suscipit ipsum perspiciatis molestiae reiciendis deserunt harum, reprehenderit praesentium? Tenetur, corrupti aperiam numquam quis esse accusantium ipsum, error repudiandae asperiores consequatur doloremque quidem praesentium illo voluptates minima molestiae mollitia vero fugiat aliquid animi aliquam perspiciatis labore? Voluptas harum nisi eligendi natus odio. Enim, itaque",
+        "Working with Wise Logics Digital Solutions has been a transformative journey for our business. Their innovative approach to digital marketing and growth strategies has not only helped us transition into a brand but also significantly elevated our brand's presence. Their expertise in data analytics, market research, and digital technology has been instrumental in creating a customized strategy that resonates with our audience.",
       jobDescription: "CEO & Co-Founder",
       companyName: "Google",
     },
     {
-      name: "Vipin",
+      name: "Alex Thompson",
       imgURL:
         "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
       description:
-        "Ratione magnam dolores earum veniam ut ab eaque consectetur beatae soluta sequi rerum non, inventore eius, deserunt dicta repellendus aliquid? Hic qui quis, aperiam repellendus natus ab maxime unde quia, repudiandae, libero aliquam? Facilis, tenetur officiis, debitis aliquam excepturi enim vitae, quis odit necessitatibus maxime nesciunt iste. Itaque, excepturi dolorum. ",
+        "Wise Logics Digital Solutions has been a game-changer for our business. Their deep understanding of digital marketing and the ability to tailor solutions to our specific needs has been invaluable. Their commitment to excellence and customer success has truly set them apart in the digital marketing landscape",
       jobDescription: "CEO & Co-Founder",
       companyName: "Facebook",
     },
     {
-      name: "Harry",
+      name: "Nicholas Woodall",
       imgURL:
         "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. ",
+        "Choosing Wise Logics Digital Solutions was one of the best decisions we made for our business. Their comprehensive digital marketing services have not only helped us establish a strong online presence but also guided us in becoming a brand that stands out in the market. We look forward to continuing our partnership with WLDS as we grow.",
       jobDescription: "HR Manager",
       companyName: "Amazon",
     },
-    {
-      name: "Jake",
-      imgURL:
-        "https://headshots-inc.com/wp-content/uploads/2022/04/website-photos-2.jpg",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      jobDescription: "CEO & Co-Founder",
-      companyName: "Microsoft",
-    },
+    
   ];
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
