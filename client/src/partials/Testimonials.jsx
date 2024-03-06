@@ -1,8 +1,41 @@
 import React from 'react';
-
+import {Link} from "react-router-dom"
 import TestimonialImage from '../images/testimonial.jpg';
 
 function Testimonials() {
+
+  const testimonialData = [
+    {
+      name:"Jhon Doe",
+      imgURl:"https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+      description:" I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+      jobDescription:"CEO & Co-Founder"
+    },
+    {
+      name:"Vipin",
+      imgURl:"https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+      description:" I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+      jobDescription:"CEO & Co-Founder"
+    },
+    {
+      name:"Harry",
+      imgURl:"https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+      description:" I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+      jobDescription:"CEO & Co-Founder"
+    },
+    {
+      name:"Jake",
+      imgURl:"https://t4.ftcdn.net/jpg/05/42/36/11/360_F_542361185_VFRJWpR2FH5OiAEVveWO7oZnfSccZfD3.jpg",
+      description:" I love this product and would recommend it to anyone. Could be not easier to use, and our multiple websites are wonderful. We get nice comments all the time.",
+      jobDescription:"CEO & Co-Founder"
+    }
+  ]
+
+
+
+
+
+
   return (
     <section className="relative">
 
@@ -90,7 +123,7 @@ function Testimonials() {
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">Darya Finger</cite>
                 <div className="text-gray-600">
-                  <span>CEO & Co-Founder</span> <a className="text-blue-600 hover:underline" href="#0">@Dropbox</a>
+                  <span>CEO & Co-Founder</span> <Link className="text-blue-600 hover:underline" href="#0">@Dropbox</Link>
                 </div>
               </div>
 
