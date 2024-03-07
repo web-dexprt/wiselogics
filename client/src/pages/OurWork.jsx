@@ -9,8 +9,11 @@ import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
 import Blog from "../partials/BlogCard";
+import { useServiceData } from "../ServiceDataContext";
 
 const ServiceContent = () => {
+  const { homeData } = useServiceData();
+
   return (
     <>
       <div className="text-center pb-12 md:pb-0">
@@ -71,7 +74,7 @@ function Service() {
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
           </div>
 
-          <FeaturesHome />
+          {/* <FeaturesHome data={homeData} /> */}
 
           {/* Tech fields */}
 
