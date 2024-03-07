@@ -9,6 +9,7 @@ import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
 import Blog from "../partials/BlogCard";
+import BlogPosts from "../partials/BlogPosts";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 
 const HomeContent = () => {
@@ -59,6 +60,7 @@ function Home() {
           </HeroHome>
 
           <Blog title={"OUR LATEST BLOGS"} />
+          <BlogPosts title={"OUR LATEST BLOGS POSTS"}/>
           <FeaturesBlocks />
           <Testimonials />
           <Newsletter />
