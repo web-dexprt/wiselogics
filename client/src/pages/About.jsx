@@ -375,7 +375,7 @@ function About() {
             </div>
           </div>
         </section>
-        <FeaturesHome />
+        {/* <FeaturesHome /> */}
         <Testimonials />
         <Newsletter />
       </main>

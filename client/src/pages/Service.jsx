@@ -8,15 +8,13 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import Banner from "../partials/Banner";
-
 import { useServiceData } from "../ServiceDataContext";
 
+
 const ServiceContent = () => {
-  const serviceData = useServiceData();
+  const { homeData,serviceData } = useServiceData();
   const { id } = useParams();
-  console.log(id);
   const service = serviceData.find((s) => s.id === id);
-  console.log(service);
   return (
     <>
       <div className="text-center pb-12 md:pb-0">
@@ -47,6 +45,7 @@ const ServiceContent = () => {
 // Home
 
 function Service() {
+  const { homeData, serviceData } = useServiceData();
   const backgroundImg = {
     backgroundImage: `url('https://digidzn.com/static/media/socialbanner.74ff873a.png')`,
     backgroundSize: "cover",
@@ -74,7 +73,7 @@ function Service() {
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
           </div>
 
-          <FeaturesHome />
+          <FeaturesHome data={homeData} />
 
           {/* Tech fields */}
 

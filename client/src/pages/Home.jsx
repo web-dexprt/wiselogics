@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
@@ -11,6 +11,7 @@ import Banner from "../partials/Banner";
 import BlogCard from "../partials/BlogCard";
 import ContactSupport from "../partials/ContactSupport";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
+import { useServiceData } from "../ServiceDataContext";
 
 const HomeContent = () => {
   return (
@@ -20,11 +21,11 @@ const HomeContent = () => {
           className="text-4xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
-          Transform your businesses into Brands, With &nbsp;
+          Transform your businesses into &nbsp;
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-            Modern Media
-          </span>
-          &nbsp; Intersection
+            Brands
+          </span><br />
+          &nbsp;With Modern Media Intersection
         </h1>
         <div className="max-w-3xl mx-auto">
           <p
@@ -87,6 +88,9 @@ const HomeContent = () => {
 // Home
 
 function Home() {
+  const { homeData } = useServiceData();
+
+
   return (
     <>
       <div className="flex flex-col min-h-screen overflow-hidden">
@@ -172,7 +176,8 @@ function Home() {
           </div>
 
           <BlogCard />
-          <FeaturesHome />
+
+          <FeaturesHome data={homeData} />
 
           {/* Tech fields */}
 
