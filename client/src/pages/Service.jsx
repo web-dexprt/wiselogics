@@ -79,7 +79,7 @@ function Service() {
                 <div className="grid lg:grid-cols-12 gap-x-10 gap-y-5">
                   <div className="md:col-span-6 lg:col-span-5">
                     <img
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-cover object-center rounded"
                       src="https://img.freepik.com/free-photo/magnifying-glass-with-seo-concepts_1134-81.jpg?w=900&t=st=1709894277~exp=1709894877~hmac=818dd7c5a2e2ccd12a9618d3dc835de2c70fda193703c59f79b2018bab94eafa"
                       alt=""
                     />
@@ -133,7 +133,7 @@ function Service() {
                   </div>
                   <div className="md:col-span-6 lg:col-span-5">
                     <img
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-cover object-center rounded"
                       src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?t=st=1709895089~exp=1709898689~hmac=a92933078fe6ae2a1f6811dad6e8b3166a0bb62c317cc7542ea4386f103542fe&w=900"
                       alt=""
                     />
@@ -145,7 +145,7 @@ function Service() {
                 <div className="grid lg:grid-cols-12 gap-x-10 gap-y-5">
                   <div className="md:col-span-6 lg:col-span-5">
                     <img
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-cover object-center rounded"
                       src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051191.jpg?t=st=1709895166~exp=1709898766~hmac=568108d273e145a3dd15c423aaaabde8d44365551cc68b3365d60f4257916646&w=900"
                       alt=""
                     />
