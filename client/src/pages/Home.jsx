@@ -106,80 +106,96 @@ function Home() {
           </HeroHome>
 
           {/* <FeaturesHome data={homeData} /> */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6">
-            {/* card 1  */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">Organic Search - SEO</h2>
-                <p className="data-content">
-                  3 Alphabets but have a preeminent impact in shaping your
-                  business sales and future. Our innovative SEO Gurus team has a
-                  unique understanding of curating result-driven SEO strategies,
-                  which will help your dream business rank higher on Google.
-                </p>
-              </div>
-            </div>
-            {/* card 2  */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">Website development</h2>
-                <p className="data-content">
-                  Our web development experts will develop fully responsive
-                  websites for your business in your suggested timeframe. The
-                  usage of clean and compact coding with advanced technology
-                  will boost your online presence.
-                </p>
-              </div>
-            </div>
-            {/* card 3 */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">Website Designing</h2>
-                <p className="data-content">
-                  The design of a website plays a crucial role in the growth of
-                  any online business. Our web design company in Chandigarh is
-                  dedicated to providing high-quality designs that not only
-                  attract but also retain users.
-                </p>
-              </div>
-            </div>
-            {/* card 4 */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">Mobile App Development</h2>
-                <p className="data-content">
-                  Wise Logics Digital Solutions specializes in offering mobile
-                  app development services across a range of industries,
-                  catering to all types of app versions including Android, iOS,
-                  and Flutter. Our services encompass both hybrid and native app
-                  development.
-                </p>
-              </div>
-            </div>
-            {/* card 5 */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">Social Media Marketing</h2>
-                <p className="data-content">
-                  Our creative social media mafias will change the outlook of
-                  social media presence with effective social media marketing
-                  strategies. Your business will rule on Instagram, YouTube,
-                  Facebook, and other social platforms with great influence on
-                  reach and engagement.
-                </p>
-              </div>
-            </div>
-            {/* card 6 */}
-            <div className="d_card border border-gray-100">
-              <div className="content">
-                <h2 className="heading">PPC Ads</h2>
-                <p className="data-content">
-                  Ignite your online presence via Pay Per Click ads that will
-                  boost your business sales and conversion rates. With the right
-                  audience targeting, analytics review, and smart campaign
-                  adjustments our PPC experts ensure brand approach, high
-                  traffic, and lead generation.
-                </p>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="pt-32 pb-12  md:pb-20 ">
+              <p className="text-red-600 hover:text-red-500 text-center mb-10">
+                What do we do ?
+              </p>
+              <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
+                Wise Logics Digital Solutions help you Fly Digital and Smart!
+              </h2>
+              <h6 className="text-gray-600 max-w-3xl text-center m-auto">
+                Our comprehensive digital marketing solutions will help you
+                drive the right message to the right target audience.
+              </h6>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6 my-10 ">
+                {/* card 1  */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">Organic Search - SEO</h2>
+                    <p className="data-content">
+                      3 Alphabets but have a preeminent impact in shaping your
+                      business sales and future. Our innovative SEO Gurus team
+                      has a unique understanding of curating result-driven SEO
+                      strategies, which will help your dream business rank
+                      higher on Google.
+                    </p>
+                  </div>
+                </div>
+                {/* card 2  */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">Website development</h2>
+                    <p className="data-content">
+                      Our web development experts will develop fully responsive
+                      websites for your business in your suggested timeframe.
+                      The usage of clean and compact coding with advanced
+                      technology will boost your online presence.
+                    </p>
+                  </div>
+                </div>
+                {/* card 3 */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">Website Designing</h2>
+                    <p className="data-content">
+                      The design of a website plays a crucial role in the growth
+                      of any online business. Our web design company in
+                      Chandigarh is dedicated to providing high-quality designs
+                      that not only attract but also retain users.
+                    </p>
+                  </div>
+                </div>
+                {/* card 4 */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">Mobile App Development</h2>
+                    <p className="data-content">
+                      Wise Logics Digital Solutions specializes in offering
+                      mobile app development services across a range of
+                      industries, catering to all types of app versions
+                      including Android, iOS, and Flutter. Our services
+                      encompass both hybrid and native app development.
+                    </p>
+                  </div>
+                </div>
+                {/* card 5 */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">Social Media Marketing</h2>
+                    <p className="data-content">
+                      Our creative social media mafias will change the outlook
+                      of social media presence with effective social media
+                      marketing strategies. Your business will rule on
+                      Instagram, YouTube, Facebook, and other social platforms
+                      with great influence on reach and engagement.
+                    </p>
+                  </div>
+                </div>
+                {/* card 6 */}
+                <div className="d_card border border-gray-100">
+                  <div className="content">
+                    <h2 className="heading">PPC Ads</h2>
+                    <p className="data-content">
+                      Ignite your online presence via Pay Per Click ads that
+                      will boost your business sales and conversion rates. With
+                      the right audience targeting, analytics review, and smart
+                      campaign adjustments our PPC experts ensure brand
+                      approach, high traffic, and lead generation.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
