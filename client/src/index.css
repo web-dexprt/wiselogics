@@ -2,14 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-body,html{
-    background-color: #000000 !important;
-    padding:0px !important;
-    margin: 0px !important;
-    min-width: 375px !important;
-    min-height: 100vh !important;
+body,
+html {
+  background-color: #000000 !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  min-width: 375px !important;
+  min-height: 100vh !important;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+/* marquee css  */
+
+.marquee_container{
+--space: 2rem;
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+
+}
+
+
+
+.marquee {
+  --duration: 50s;
+  --gap: var(--space);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  /* transform: skewY(-1.8deg); */
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.m-item {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.m-item img {
+  width: 125px;
+  height: 96px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.m-item p {
+  font-size:28px;
+  font-weight:bold;
+  
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }

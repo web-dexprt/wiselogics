@@ -13,6 +13,7 @@ import BlogCard from "../partials/BlogCard";
 import ContactSupport from "../partials/ContactSupport";
 const HeroImage = "https://digidzn.com/static/media/flow.9f5f9428.gif";
 import { useServiceData } from "../ServiceDataContext";
+import MarqueeComponent from "../partials/MarqueeComponent";
 
 const HomeContent = () => {
   return (
@@ -211,66 +212,11 @@ function Home() {
                 <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
                   Full Growth Capabilities
                 </h2>
-                <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center my-10 ">
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="h-48 w-full sm:h-24 sm:w-56">
-                    <img
-                      className="h-full w-full object-cover object-center"
-                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                      alt=""
-                    />
-                  </div>
+                {/* Content section  */}
+                <div className="px-4 sm:px-6 my-10">
+                  <MarqueeComponent />
                 </div>
-
-                <hr className="border border-2 border-white" />
+        
               </div>
             </div>
           </section>
