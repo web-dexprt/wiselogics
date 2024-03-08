@@ -84,9 +84,7 @@ function Home() {
     width: "100%",
   };
 
-  const overlay = {
-    
-  }
+  const overlay = {};
   return (
     <>
       <div className="home flex flex-col min-h-screen overflow-hidden ">
@@ -95,7 +93,7 @@ function Home() {
         {/*  Page content */}
         <main className="flex-grow">
           {/* first section */}
-          <section className="relative h-screen w-full flex flex-col justify-center items-center">
+          <section className="relative h-screen w-full">
             <div style={backgroundImg} className="absolute inset-0">
               <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-md"></div>
               <HeroHome>
@@ -103,12 +101,10 @@ function Home() {
               </HeroHome>
             </div>
           </section>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-36">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
-          </div>
+
           {/* second section  */}
-          <section className="mt-40">
-            <div className="max-w-6xl px-4 sm:px-6 mt-36 mx-auto">
+          <section className="">
+            <div className="max-w-6xl px-4 sm:px-6 mx-auto">
               <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
                 <p className="text-red-600 hover:text-red-500 text-center mb-8">
                   What do we do ?
