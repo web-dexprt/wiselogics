@@ -179,8 +179,8 @@ function Home() {
 
           <FeaturesHome data={homeData} />
 
-          {/* Tech fields */}
-
+          <FeaturesBlocks />
+          {/* Our bands  */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
               <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
@@ -248,8 +248,6 @@ function Home() {
               <hr className="border border-2 border-white" />
             </div>
           </div>
-
-          <FeaturesBlocks />
           <Testimonials />
           <Newsletter />
           <ContactSupport />
