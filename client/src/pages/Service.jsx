@@ -72,7 +72,7 @@ function Service() {
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
           </div>
 
-          <section className="bg-white">
+          <section className="bg-white px-10 py-5">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
               {/* card 1  */}
               <div className="pt-32 pb-12 md:pt-40 md:pb-20">
