@@ -5,7 +5,7 @@ import Dropdown from "../utils/Dropdown";
 // wiselogics 
 import wiselogicslogo from "../assets/logo/wiselogicslogo.png"
 import wiselogicswhitebg from "../assets/logo/wiselogicslogo-bg-white.png"
-
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 // react icons
@@ -98,8 +98,7 @@ function Header() {
   }, [top]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+    <header className={`fixed top-0 left-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
         !top && "bg-white backdrop-blur-sm shadow-lg "
       }`}
     >
@@ -123,8 +122,10 @@ function Header() {
             </Link>
           </div>
 
+          <div className="menu-icon text-3xl block lg:hidden"><RxHamburgerMenu /></div>
+
           {/* Site navigation */}
-          <nav className="hidden lg:flex flex-grow">
+          <nav className="lg:flex flex-grow hidden lg:block">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link
