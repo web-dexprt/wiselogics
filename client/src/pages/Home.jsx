@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./home.css"
+import "./home.css";
 import { Link } from "react-router-dom";
 import Header from "../partials/Header";
 import HeroHome from "../partials/HeroHome";
@@ -51,7 +51,7 @@ const HomeContent = () => {
                 className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
                 href="/contact-us"
               >
-                Let’s Connect (CTA)
+                Let’s Connect
               </Link>
             </div>
             <div>
@@ -65,24 +65,6 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-      {/* Hero image */}
-      <div>
-        <div
-          className="relative flex justify-center mb-8"
-          data-aos="zoom-y-out"
-          data-aos-delay="450"
-        >
-          <div className="flex flex-col justify-center">
-            <img
-              className="mx-auto object-cover object-center"
-              src={HeroImage}
-              width="100%"
-              height="432"
-              alt="Hero"
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 };
@@ -91,6 +73,15 @@ const HomeContent = () => {
 
 function Home() {
   const { homeData } = useServiceData();
+
+  const backgroundImg = {
+    backgroundImage: `url('https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg?size=626&ext=jpg&ga=GA1.1.705946748.1706705440&semt=ais')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "100vh",
+    width: "100%",
+  };
 
   return (
     <>
@@ -101,179 +92,211 @@ function Home() {
         {/*  Page content */}
         <main className="flex-grow">
           {/*  Page sections */}
-          <HeroHome>
-            <HomeContent />
-          </HeroHome>
+          {/* first section */}
+          <section className="relative">
+            <div style={backgroundImg} className="absolute top-0">
+              <HeroHome>
+                <HomeContent />
+              </HeroHome>
+            </div>
+          </section>
 
-          {/* <FeaturesHome data={homeData} /> */}
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-32 pb-12  md:pb-20 ">
-              <p className="text-red-600 hover:text-red-500 text-center mb-10">
-                What do we do ?
-              </p>
-              <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
-                Wise Logics Digital Solutions help you Fly Digital and Smart!
-              </h2>
-              <h6 className="text-gray-600 max-w-3xl text-center m-auto">
-                Our comprehensive digital marketing solutions will help you
-                drive the right message to the right target audience.
-              </h6>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-36">
+            <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
+          </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6 my-10 ">
-                {/* card 1  */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">Organic Search - SEO</h2>
-                    <p className="data-content">
-                      3 Alphabets but have a preeminent impact in shaping your
-                      business sales and future. Our innovative SEO Gurus team
-                      has a unique understanding of curating result-driven SEO
-                      strategies, which will help your dream business rank
-                      higher on Google.
-                    </p>
+          {/* second section  */}
+          <section className="mt-40">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+              <div className="py-12 md:pb-20">
+                <p className="text-red-600 hover:text-red-500 text-center mb-8">
+                  What do we do ?
+                </p>
+                <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
+                  Wise Logics Digital Solutions help you Fly Digital and Smart!
+                </h2>
+                <h6 className="text-gray-600 max-w-3xl text-center m-auto">
+                  Our comprehensive digital marketing solutions will help you
+                  drive the right message to the right target audience.
+                </h6>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6 my-10 ">
+                  {/* card 1  */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">Organic Search - SEO</h2>
+                      <p className="data-content">
+                        3 Alphabets but have a preeminent impact in shaping your
+                        business sales and future. Our innovative SEO Gurus team
+                        has a unique understanding of curating result-driven SEO
+                        strategies, which will help your dream business rank
+                        higher on Google.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* card 2  */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">Website development</h2>
-                    <p className="data-content">
-                      Our web development experts will develop fully responsive
-                      websites for your business in your suggested timeframe.
-                      The usage of clean and compact coding with advanced
-                      technology will boost your online presence.
-                    </p>
+                  {/* card 2  */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">Website development</h2>
+                      <p className="data-content">
+                        Our web development experts will develop fully
+                        responsive websites for your business in your suggested
+                        timeframe. The usage of clean and compact coding with
+                        advanced technology will boost your online presence.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* card 3 */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">Website Designing</h2>
-                    <p className="data-content">
-                      The design of a website plays a crucial role in the growth
-                      of any online business. Our web design company in
-                      Chandigarh is dedicated to providing high-quality designs
-                      that not only attract but also retain users.
-                    </p>
+                  {/* card 3 */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">Website Designing</h2>
+                      <p className="data-content">
+                        The design of a website plays a crucial role in the
+                        growth of any online business. Our web design company in
+                        Chandigarh is dedicated to providing high-quality
+                        designs that not only attract but also retain users.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* card 4 */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">Mobile App Development</h2>
-                    <p className="data-content">
-                      Wise Logics Digital Solutions specializes in offering
-                      mobile app development services across a range of
-                      industries, catering to all types of app versions
-                      including Android, iOS, and Flutter. Our services
-                      encompass both hybrid and native app development.
-                    </p>
+                  {/* card 4 */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">Mobile App Development</h2>
+                      <p className="data-content">
+                        Wise Logics Digital Solutions specializes in offering
+                        mobile app development services across a range of
+                        industries, catering to all types of app versions
+                        including Android, iOS, and Flutter. Our services
+                        encompass both hybrid and native app development.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* card 5 */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">Social Media Marketing</h2>
-                    <p className="data-content">
-                      Our creative social media mafias will change the outlook
-                      of social media presence with effective social media
-                      marketing strategies. Your business will rule on
-                      Instagram, YouTube, Facebook, and other social platforms
-                      with great influence on reach and engagement.
-                    </p>
+                  {/* card 5 */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">Social Media Marketing</h2>
+                      <p className="data-content">
+                        Our creative social media mafias will change the outlook
+                        of social media presence with effective social media
+                        marketing strategies. Your business will rule on
+                        Instagram, YouTube, Facebook, and other social platforms
+                        with great influence on reach and engagement.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* card 6 */}
-                <div className="d_card border border-gray-100">
-                  <div className="content">
-                    <h2 className="heading">PPC Ads</h2>
-                    <p className="data-content">
-                      Ignite your online presence via Pay Per Click ads that
-                      will boost your business sales and conversion rates. With
-                      the right audience targeting, analytics review, and smart
-                      campaign adjustments our PPC experts ensure brand
-                      approach, high traffic, and lead generation.
-                    </p>
+                  {/* card 6 */}
+                  <div className="d_card border border-gray-600">
+                    <div className="content">
+                      <h2 className="heading">PPC Ads</h2>
+                      <p className="data-content">
+                        Ignite your online presence via Pay Per Click ads that
+                        will boost your business sales and conversion rates.
+                        With the right audience targeting, analytics review, and
+                        smart campaign adjustments our PPC experts ensure brand
+                        approach, high traffic, and lead generation.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <FeaturesBlocks />
+          {/* third section  */}
+          <section>
+            <FeaturesBlocks />
+          </section>
 
+          {/* fourth section  */}
           {/* Our bands  */}
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-              <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
-                Full Growth Capabilities
-              </h2>
-              <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center my-10 ">
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
+          <section>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+              <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
+                <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
+                  Full Growth Capabilities
+                </h2>
+                <div className="grid lg:grid-cols-4 gap-x-10 gap-y-5 md:grid-cols-3 sm:grid-cols-2 justify-items-center my-10 ">
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="h-48 w-full sm:h-24 sm:w-56">
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="h-48 w-full sm:h-24 sm:w-56">
-                  <img
-                    className="h-full w-full object-cover object-center"
-                    src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
 
-              <hr className="border border-2 border-white" />
+                <hr className="border border-2 border-white" />
+              </div>
             </div>
-          </div>
-          <BlogCard />
-          <Testimonials />
-          <Newsletter />
-          <ContactSupport />
+          </section>
+
+          {/* fifth section  */}
+          <section>
+            <BlogCard />
+          </section>
+
+          {/* sixth section  */}
+          <section>
+            <Testimonials />
+          </section>
+
+          {/* seventh section */}
+          <section>
+            <Newsletter />
+          </section>
+          {/* eight section */}
+          <section>
+            <ContactSupport />
+          </section>
         </main>
 
         {/*  Site footer */}
