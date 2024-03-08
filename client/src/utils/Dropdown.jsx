@@ -33,16 +33,18 @@ export default function Dropdown({ title, solutions }) {
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-        <span
-          className={` ${
-            !top
-              ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-              : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+        <span className={` ${!top
+              ? "font-medium lg:text-black text-white hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+              : "font-medium lg:text-white text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
           }`}
         >
           {title}
         </span>
-        <ChevronDownIcon className="h-5 w-5 text-white" aria-hidden="true" />
+        <ChevronDownIcon className={` ${
+            !top
+              ? "font-medium h-5 w-5 lg:text-black text-white"
+              : "font-medium h-5 w-5 lg:text-white text-white"
+          }`} aria-hidden="true" />
       </Popover.Button>
 
       <Transition

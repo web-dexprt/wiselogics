@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../Header.css';
 import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
@@ -14,6 +15,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+
 import {
   ArrowPathIcon,
   ChartPieIcon,
@@ -97,13 +99,15 @@ function Header() {
     return () => window.removeEventListener("scroll", scrollHandler);
   }, [top]);
 
+  const[menuopen, setMenuOpen]=useState(false);
+
   return (
     <header className={`fixed top-0 left-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
         !top && "bg-white backdrop-blur-sm shadow-lg "
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="nav-bar flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
@@ -122,18 +126,26 @@ function Header() {
             </Link>
           </div>
 
-          <div className="menu-icon text-3xl block lg:hidden"><RxHamburgerMenu /></div>
+          <div className={`${
+                    !top
+                      ? "lg:text-white text-black hover:text-black px-5 py-3  transition duration-150 ease-in-out"
+                      : "lg:text-black text-white hover:text-white px-5 py-3  transition duration-150 ease-in-out"
+                  } menu-icon`} text-white text-3xl onClick={()=>{setMenuOpen(!menuopen)}}><RxHamburgerMenu className="text-3xl" /></div>
 
           {/* Site navigation */}
-          <nav className="lg:flex flex-grow hidden lg:block">
+          <nav className={`${menuopen ? "menu-open" : ""} ${
+                    !top
+                      ? "lg:text-black text-white hover:text-black px-5 py-3  transition duration-150 ease-in-out"
+                      : "lg:text-white text-white hover:text-white px-5 py-3  transition duration-150 ease-in-out"
+                  }`}>
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link
                   to="/about-us"
                   className={` ${
                     !top
-                      ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      ? "lg:text-black text-white font-medium hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "lg:text-white text-white font-medium hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   About us
@@ -143,8 +155,8 @@ function Header() {
                 <div
                   className={` ${
                     !top
-                      ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium  text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      ? "lg:text-black text-white font-medium hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "lg:text-white text-white font-medium hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   <Dropdown title={"Our Expertise"} solutions={ServicesList} />
@@ -156,8 +168,8 @@ function Header() {
                   to="/our-work"
                   className={` ${
                     !top
-                      ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-white hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      ? "lg:text-black text-white font-medium hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "lg:text-white text-white font-medium hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   Our Work
@@ -168,8 +180,8 @@ function Header() {
                   to="/blog"
                   className={` ${
                     !top
-                      ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium  text-white hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      ? "lg:text-black text-white font-medium hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "lg:text-white text-white font-medium hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   Blog
@@ -180,8 +192,8 @@ function Header() {
                   to="/contact-us"
                   className={` ${
                     !top
-                      ? "font-medium text-black hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
-                      : "font-medium text-white hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      ? "lg:text-black text-white font-medium hover:text-black px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                      : "lg:text-white text-white font-medium hover:text-gray-100 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   }`}
                 >
                   Contact us
