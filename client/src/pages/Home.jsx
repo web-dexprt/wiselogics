@@ -108,7 +108,7 @@ function Home() {
           {/* <FeaturesHome data={homeData} /> */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6">
             {/* card 1  */}
-            <div className="d_card ">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">Organic Search - SEO</h2>
                 <p className="data-content">
@@ -120,7 +120,7 @@ function Home() {
               </div>
             </div>
             {/* card 2  */}
-            <div className="d_card ">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">Website development</h2>
                 <p className="data-content">
@@ -132,7 +132,7 @@ function Home() {
               </div>
             </div>
             {/* card 3 */}
-            <div className="d_card">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">Website Designing</h2>
                 <p className="data-content">
@@ -144,7 +144,7 @@ function Home() {
               </div>
             </div>
             {/* card 4 */}
-            <div className="d_card">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">Mobile App Development</h2>
                 <p className="data-content">
@@ -157,7 +157,7 @@ function Home() {
               </div>
             </div>
             {/* card 5 */}
-            <div className="d_card">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">Social Media Marketing</h2>
                 <p className="data-content">
@@ -170,7 +170,7 @@ function Home() {
               </div>
             </div>
             {/* card 6 */}
-            <div className="d_card">
+            <div className="d_card border border-gray-100">
               <div className="content">
                 <h2 className="heading">PPC Ads</h2>
                 <p className="data-content">
@@ -185,7 +185,7 @@ function Home() {
           </div>
 
           <FeaturesBlocks />
-          
+
           {/* Our bands  */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
