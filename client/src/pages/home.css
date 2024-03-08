@@ -45,7 +45,7 @@
     display: flex;
     -webkit-box-align: end;
     align-items: flex-end;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 1rem;
     width: 100%;
     text-align: center;

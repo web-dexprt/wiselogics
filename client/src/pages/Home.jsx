@@ -84,6 +84,9 @@ function Home() {
     width: "100%",
   };
 
+  const overlay = {
+    
+  }
   return (
     <>
       <div className="home flex flex-col min-h-screen overflow-hidden ">
@@ -92,8 +95,9 @@ function Home() {
         {/*  Page content */}
         <main className="flex-grow">
           {/* first section */}
-          <section className="relative">
-            <div style={backgroundImg} className="absolute top-0">
+          <section className="relative h-screen w-full">
+            <div style={backgroundImg} className="absolute inset-0">
+              <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-md"></div>
               <HeroHome>
                 <HomeContent />
               </HeroHome>
@@ -119,7 +123,14 @@ function Home() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 lg:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6 my-10 ">
                   {/* card 1  */}
-                  <div className="d_card border border-gray-600">
+                  <div className="d_card border border-gray-600 relative">
+                    <div className="absolute z-50 top-[-25px]  w-24 h-24 rounded-full bg-white">
+                      <img
+                        className="w-full h-full object-cover rounded-full"
+                        src="https://cdn-icons-png.freepik.com/512/5902/5902216.png"
+                        alt=""
+                      />
+                    </div>
                     <div className="content">
                       <h2 className="heading">Organic Search - SEO</h2>
                       <p className="data-content">
@@ -216,7 +227,6 @@ function Home() {
                 <div className="px-4 sm:px-6 my-10">
                   <MarqueeComponent />
                 </div>
-        
               </div>
             </div>
           </section>

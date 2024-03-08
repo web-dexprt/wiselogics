@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "themeColor": "#000000",
+        themeColor: "#000000",
       },
-      boxShadow: {
-        "inset-black": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.25)",
+      backdropFilter: {
+        none: "none",
+        blur: "blur(15px)",
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-filters")],
 };
