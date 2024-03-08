@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TestimonialImage from "../images/testimonial.jpg";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 function Testimonials() {
   const testimonialData = [
@@ -31,10 +32,20 @@ function Testimonials() {
       jobDescription: "HR Manager",
       companyName: "Amazon",
     },
-    
   ];
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const handleNext = () => {
+    setCurrentTestimonial(
+      (prevIndex) => (prevIndex + 1) % testimonialData.length
+    );
+  };
+  const handlePrev = () => {
+    setCurrentTestimonial(
+      (prevIndex) =>
+        (prevIndex - 1 + testimonialData.length) % testimonialData.length
+    );
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -83,7 +94,7 @@ function Testimonials() {
           </g>
         </svg>
       </div>
-
+      {/* testimonial Heading  */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -167,7 +178,24 @@ function Testimonials() {
           {/* Testimonials */}
           <div className="max-w-4xl mx-auto mt-20" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
-              {/* Testimonial */}
+              {/* Testimonial change buttons */}
+              <div className="absolute left-0 z-2 top-1/2 flex justify-center space-x-4 mt-4">
+                <button
+                  onClick={handlePrev}
+                  className="text-gray-600 hover:text-gray-400 text-white font-bold py-2 px-4 rounded"
+                >
+                  <FaCircleChevronRight className="rotate-180 text-gray-800 text-4xl" />
+                </button>
+              </div>
+              <div className="absolute right-0 z-2 top-1/2 flex justify-center space-x-4 mt-4">
+                <button
+                  onClick={handleNext}
+                  className="text-gray-600 hover:text-gray-400 text-white font-bold py-2 px-4 rounded"
+                >
+                  <FaCircleChevronRight className="text-gray-800 text-4xl" />
+                </button>
+              </div>
+
               <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
                 <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
                   <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
@@ -192,7 +220,6 @@ function Testimonials() {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
