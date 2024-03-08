@@ -63,11 +63,11 @@ function About() {
         <HeroHome>
           <AboutContent />
         </HeroHome>
-        {/* Meet Our Team  */}
 
+        {/* Meet Our Team  */}
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 className="h2 mb-4 text-white tracking-wide">
-            Meet Your Extended Growth Team
+            MEET YOUR EXTENDED GROWTH TEAM
           </h2>
         </div>
 
@@ -123,7 +123,7 @@ function About() {
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 className="h2 mb-4 text-white tracking-wide">
-                  Meet Your Extended Growth Team
+                  CHECK OUT OUR LATEST WORK
                 </h2>
               </div>
 
