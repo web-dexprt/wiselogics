@@ -95,7 +95,7 @@ function Home() {
         {/*  Page content */}
         <main className="flex-grow">
           {/* first section */}
-          <section className="relative h-screen w-full">
+          <section className="relative h-screen w-full flex flex-col justify-center items-center">
             <div style={backgroundImg} className="absolute inset-0">
               <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-md"></div>
               <HeroHome>
