@@ -75,7 +75,7 @@ function Home() {
   const { homeData } = useServiceData();
 
   const backgroundImg = {
-    backgroundImage: `url('https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg?size=626&ext=jpg&ga=GA1.1.705946748.1706705440&semt=ais')`,
+    backgroundImage: `url('https://digidzn.com/static/media/socialbanner.74ff873a.png')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -88,10 +88,8 @@ function Home() {
       <div className="home flex flex-col min-h-screen overflow-hidden ">
         {/*  Site header */}
         <Header children={<HomeContent />} />
-
         {/*  Page content */}
         <main className="flex-grow">
-          {/*  Page sections */}
           {/* first section */}
           <section className="relative">
             <div style={backgroundImg} className="absolute top-0">
@@ -100,15 +98,13 @@ function Home() {
               </HeroHome>
             </div>
           </section>
-
           <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-36">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
           </div>
-
           {/* second section  */}
           <section className="mt-40">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6">
-              <div className="py-12 md:pb-20">
+            <div className="max-w-6xl px-4 sm:px-6 mt-36 mx-auto">
+              <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
                 <p className="text-red-600 hover:text-red-500 text-center mb-8">
                   What do we do ?
                 </p>
