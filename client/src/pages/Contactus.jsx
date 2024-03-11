@@ -78,7 +78,7 @@ const ContactContent = () => {
                 >
                   <span>Lets Chat</span>
                   <span>
-                    <FaWhatsapp className="text-xl" />
+                    <FaWhatsapp className="text-2xl text-green-600" />
                   </span>
                 </Link>
               </div>
@@ -89,7 +89,7 @@ const ContactContent = () => {
                 >
                   <span>call</span>
                   <span>
-                    <FaPhoneFlip />
+                    <FaPhoneFlip className="text-2xl text-blue-600" />
                   </span>
                 </Link>
               </div>
@@ -146,7 +146,7 @@ const ContactContent = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Email..."
+                      placeholder="Email Address"
                       autoComplete="email"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 shadow-md"
                     />
@@ -182,6 +182,7 @@ const ContactContent = () => {
                       type="tel"
                       name="phone-number"
                       id="phone-number"
+                      placeholder="Phone Number"
                       autoComplete="tel"
                       className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 shadow-md"
                     />
@@ -197,6 +198,7 @@ const ContactContent = () => {
                   <div className="mt-2.5">
                     <textarea
                       name="message"
+                      placeholder="Type Your Message here ...."
                       id="message"
                       rows={4}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 shadow-md"
@@ -226,9 +228,12 @@ const ContactContent = () => {
                   </div>
                   <Switch.Label className="text-sm leading-6 text-gray-600">
                     By selecting this, you agree to our{" "}
-                    <a href="#" className="font-semibold text-indigo-600">
+                    <Link
+                      href="/privacy-policy"
+                      className="font-semibold text-indigo-600"
+                    >
                       privacy&nbsp;policy
-                    </a>
+                    </Link>
                     .
                   </Switch.Label>
                 </Switch.Group>
@@ -236,7 +241,7 @@ const ContactContent = () => {
               <div className="mt-10">
                 <button
                   type="submit"
-                  className="block w-full rounded-md bg-green-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                  className="block w-full rounded-md bg-blue-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                 >
                   Let's talk
                 </button>
