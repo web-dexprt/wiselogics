@@ -52,7 +52,6 @@ function Header() {
       href: "/service/digital-ads",
       icon: SquaresPlusIcon,
     },
-  
   ];
 
   const WorkList = [
@@ -130,7 +129,7 @@ function Header() {
                     !top
                       ? "lg:text-white text-black hover:text-black px-5 py-3  transition duration-150 ease-in-out"
                       : "lg:text-black text-white hover:text-white px-5 py-3  transition duration-150 ease-in-out"
-                  } menu-icon`} text-white text-3xl onClick={()=>{setMenuOpen(!menuopen)}}><RxHamburgerMenu className="text-3xl" /></div>
+                  } menu-icon`}  onClick={()=>{setMenuOpen(!menuopen)}}><RxHamburgerMenu className="text-3xl" /></div>
 
           {/* Site navigation */}
           <nav className={`${menuopen ? "menu-open" : ""} ${

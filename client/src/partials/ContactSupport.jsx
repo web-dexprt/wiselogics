@@ -13,21 +13,21 @@ function ContactSupport() {
           </div>
         </div>
         <div className="hidden  md:grid grid-cols-2 md:grid-cols-3">
-          <div lassName="h-24 w-auto">
+          <div className="h-24 w-auto">
             <img
               className="w-full h-full object-cover object-center"
               src="https://digidzn.com/static/media/CXO.b217c3ed.png"
               alt=""
             />
           </div>
-          <div lassName="h-24 w-auto">
+          <div className="h-24 w-auto">
             <img
               className="w-full h-full object-cover object-center"
               src="https://digidzn.com/static/media/indian%20retailer.09b96a4f.png"
               alt=""
             />
           </div>
-          <div lassName="h-24 w-auto">
+          <div className="h-24 w-auto">
             <img
               className="w-full h-full object-cover object-center"
               src="https://digidzn.com/static/media/Ndtv%202.5da2f0f4.png"
