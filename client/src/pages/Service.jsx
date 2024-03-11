@@ -14,22 +14,24 @@ const ServiceContent = () => {
   const { homeData, serviceData } = useServiceData();
   const { id } = useParams();
   const service = serviceData.find((s) => s.id === id);
+  console.log(serviceData);
+  
   return (
     <>
       <div className="text-center pb-12 md:pb-0">
         <h1
-          className="text-4xl md:text-4xl text-center sm:text-start text-white font-extrabold leading-tighter tracking-tighter mb-4"
+          className="text-4xl md:text-4xl text-center text-white font-extrabold leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
           &nbsp;
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+          <span className="text-orange-700">
             {service.title}
           </span>
           &nbsp;
         </h1>
         <div className="max-w-6xl mx-auto">
           <p
-            className="text-lg lg:text-start text-center text-gray-100 mb-8"
+            className="text-lg text-center text-gray-100 mb-8"
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
@@ -46,30 +48,26 @@ const ServiceContent = () => {
 function Service() {
   const { homeData, serviceData } = useServiceData();
   const backgroundImg = {
-    backgroundImage: `url('https://digidzn.com/static/media/socialbanner.74ff873a.png')`,
+    backgroundImage: `url('../src/images/typing-img.jpg')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "75vh",
+    height: "70vh",
     width: "100%",
   };
 
   return (
     <>
-      <div className=" flex flex-col min-h-screen overflow-hidden">
+      <div className=" flex flex-col">
         {/*  Site header */}
         <Header children={<ServiceContent />} />
         {/*  Page content */}
         <main className="flex-grow relative">
           {/*  Page sections */}
-          <div style={backgroundImg} className="absolute top-0">
+          <div style={backgroundImg} className="">
             <HeroHome>
               <ServiceContent />
             </HeroHome>
-          </div>
-
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-32">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20 "></div>
           </div>
 
           <section className="bg-white px-10 py-5">

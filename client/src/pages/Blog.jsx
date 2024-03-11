@@ -17,11 +17,11 @@ const HomeContent = () => {
     <>
       <div className="text-center ">
         <h1
-          className="text-5xl md:text-5xl sm:text-center  md:text-start text-white font-extrabold leading-tighter tracking-tighter mb-4"
+          className="text-5xl text-center text-white font-extrabold leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
           We are a team of experts, growth &nbsp;
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+          <span className="text-orange-700">
             hackers and creative minds!
           </span>
         </h1>
@@ -46,6 +46,14 @@ const HomeContent = () => {
 // Home
 
 function Home() {
+  const backgroundImg = {
+    backgroundImage: `url('src/images/meeting-img.jpg')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "70vh",
+    width: "100%",
+  };
   return (
     <>
       <div className="flex flex-col min-h-screen overflow-hidden">
@@ -55,11 +63,13 @@ function Home() {
         {/*  Page content */}
         <main className="flex-grow">
           {/*  Page sections */}
-          <HeroHome>
-            <HomeContent />
-          </HeroHome>
-
-          <Blog title={"OUR LATEST BLOGS"} />
+          <div style={backgroundImg}>
+            <HeroHome>
+              <HomeContent />
+            </HeroHome>
+          </div>
+{/* 
+          <Blog title={"OUR LATEST BLOGS"} /> */}
           <BlogPosts title={"OUR LATEST BLOGS POSTS"}/>
           <FeaturesBlocks />
           <Testimonials />

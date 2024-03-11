@@ -17,7 +17,7 @@ const AboutContent = () => {
         data-aos="zoom-y-out"
       >
         Who are we???&nbsp;
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+        <span className="text-orange-700">
           We are Digitalholics!
         </span>
       </h1>
@@ -36,11 +36,7 @@ const AboutContent = () => {
             with business growth?
           </p>
         </div>
-        <p
-          className="text-lg md:text-justify text-center text-gray-300 mb-8"
-          data-aos="zoom-y-out"
-          data-aos-delay="150"
-        >
+        <p className="text-lg text-center text-gray-300 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
           Let’s unlock the rapid growth of your business with the help of
           proficient and creative people. We are hardworking yet finicky about
           timely delivery and results. Don’t know about the algorithms of
@@ -53,6 +49,14 @@ const AboutContent = () => {
 };
 
 function About() {
+  const backgroundImg = {
+    backgroundImage: `url('src/images/meeting-img.jpg')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "70vh",
+    width: "100%",
+  };
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
@@ -60,21 +64,23 @@ function About() {
 
       {/*  Page content */}
       <main className="flex-grow">
-        <HeroHome>
-          <AboutContent />
-        </HeroHome>
-
-        {/* Meet Our Team  */}
-        <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 className="h2 mb-4 text-white tracking-wide">
-            MEET YOUR EXTENDED GROWTH TEAM
-          </h2>
+        <div style={backgroundImg}>
+          <HeroHome>
+            <AboutContent />
+          </HeroHome>
         </div>
-
-        <main className="page-content">
+      
+        {/* Meet Our Team  */}
+        <div className="bg-slate-200 text-black py-20 md:py-30">
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="h2 mb-4 text-black tracking-wide">
+              MEET YOUR EXTENDED GROWTH TEAM
+            </h2>
+          </div>
+          <main className="page-content">
           <div className="d_card">
             <div className="content">
-              <h2 className="heading">Snow View</h2>
+              <h2 className="heading">Akshit Sharma</h2>
               <p className="data-content">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.{" "}
@@ -83,7 +89,7 @@ function About() {
           </div>
           <div className="d_card ">
             <div className="content">
-              <h2 className="heading">Photoshoot mood</h2>
+              <h2 className="heading">Anuj Gupta</h2>
               <p className="data-content">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.{" "}
@@ -92,7 +98,7 @@ function About() {
           </div>
           <div className="d_card">
             <div className="content">
-              <h2 className="heading">3D View</h2>
+              <h2 className="heading">Teena Varma</h2>
               <p className="data-content">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.{" "}
@@ -101,14 +107,16 @@ function About() {
           </div>
           <div className="d_card">
             <div className="content">
-              <h2 className="heading">Explore The Cavas</h2>
+              <h2 className="heading">Vivek Dube</h2>
               <p className="data-content">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.{" "}
               </p>
             </div>
           </div>
-        </main>
+          </main>
+        </div>
+        
         {/* card section  */}
         <section className="relative">
           {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -138,7 +146,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"
@@ -182,7 +190,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"
@@ -223,7 +231,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"
@@ -257,7 +265,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"
@@ -304,7 +312,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"
@@ -338,7 +346,7 @@ function About() {
                   >
                     <g fill="none" fillRule="evenodd">
                       <rect
-                        className="fill-current text-blue-600"
+                        className="fill-current text-orange-700"
                         width="64"
                         height="64"
                         rx="32"

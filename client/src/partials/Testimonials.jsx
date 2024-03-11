@@ -216,7 +216,7 @@ function Testimonials() {
                     </cite>
                     <div className="text-gray-600 flex gap-x-1 justify-center">
                       <span>{jobDescription}</span>
-                      <span className="text-blue-600">@{companyName}</span>
+                      <span className="text-orange-700">@{companyName}</span>
                     </div>
                   </div>
                 </div>

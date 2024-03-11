@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import Dropdown from "../utils/Dropdown";
 
 // wiselogics 
-import wiselogicslogo from "../assets/logo/wiselogicslogo.png"
-import wiselogicswhitebg from "../assets/logo/wiselogicslogo-bg-white.png"
+import wiselogicslogo from "../assets/logo/logo.png"
+import wiselogicswhitebg from "../assets/logo/dark-logo.png"
 import { RxHamburgerMenu } from "react-icons/rx";
 
 
@@ -102,7 +102,7 @@ function Header() {
   const[menuopen, setMenuOpen]=useState(false);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+    <header className={`py-2 fixed top-0 left-0 w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
         !top && "bg-white backdrop-blur-sm shadow-lg "
       }`}
     >
@@ -114,7 +114,7 @@ function Header() {
             <Link to="/" className="block" aria-label="Cruip">
               <div className="">
                 <img
-                  className="h-16 w-auto object-cover object-center"
+                  className="w-40 h-40 object-contain object-center"
                   src={
                     !top
                       ? `${wiselogicswhitebg}`

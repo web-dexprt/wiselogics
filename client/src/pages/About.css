@@ -46,7 +46,7 @@
   width: 100%;
   text-align: center;
   color: whitesmoke;
-  background-color: whitesmoke;
+  background-color: rgb(61, 61, 61);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
@@ -131,16 +131,16 @@
     -webkit-transform calc(var(--d) * 2) var(--e);
 }
 .d_card:nth-child(1):before {
-  background-image: url();
+  background-image: url(https://images.pexels.com/photos/15742696/pexels-photo-15742696/free-photo-of-man-taking-a-photo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
 }
 .d_card:nth-child(2):before {
-  background-image: url();
+  background-image: url(https://images.pexels.com/photos/19526734/pexels-photo-19526734/free-photo-of-smiling-man-in-scarf-and-hat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
 }
 .d_card:nth-child(3):before {
-  background-image: url();
+  background-image: url(https://images.pexels.com/photos/11617191/pexels-photo-11617191.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
 }
 .d_card:nth-child(4):before {
-  background-image: url();
+  background-image: url(https://images.pexels.com/photos/19623104/pexels-photo-19623104/free-photo-of-a-man-standing-on-a-balcony.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
 }
 
 .content {

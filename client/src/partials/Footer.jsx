@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import wiselogicslogo from "../assets/logo/wiselogicslogo.png"
+import wiselogicslogo from "../assets/logo/logo.png"
 // react icons social media
 import {FaInstagram, FaFacebook ,FaXTwitter ,FaPinterest   } from "react-icons/fa6"; 
 

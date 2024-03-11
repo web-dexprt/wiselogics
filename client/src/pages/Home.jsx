@@ -20,26 +20,25 @@ const HomeContent = () => {
     <>
       <div className="text-center pb-12 md:pb-16">
         <h1
-          className="text-4xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-4"
+          className="text-4xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-6"
           data-aos="zoom-y-out"
         >
           Transform your businesses into &nbsp;
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+          <span className="bg-clip-text text-transparent bg-orange-600">
             Brands
           </span>
-          <br />
           &nbsp;With Modern Media Intersection
         </h1>
         <div className="max-w-3xl mx-auto">
           <p
-            className="text-md md:text-xl text-gray-300 mb-8"
+            className="text-md md:text-xl text-gray-300 mb-10"
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
             We believe in maximizing your business online presence with
             result-driven strategies and creative thinking.
           </p>
-          <span className="bg-clip-text text-transparent text-lg font-bold bg-gradient-to-r from-blue-500 to-teal-400 ">
+          <span className="text-lg font-medium text-orange-600 mb-6">
             Connect Today, Change Tomorrow.
           </span>
           <div
@@ -49,7 +48,7 @@ const HomeContent = () => {
           >
             <div>
               <Link
-                className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
+                className="btn text-white bg-orange-700 hover:bg-orange-600 w-full mb-4 sm:w-auto sm:mb-0"
                 href="/contact-us"
               >
                 Let’s Connect
@@ -76,11 +75,11 @@ function Home() {
   const { homeData } = useServiceData();
 
   const backgroundImg = {
-    backgroundImage: `url('https://digidzn.com/static/media/socialbanner.74ff873a.png')`,
+    backgroundImage: `url('src/images/digital-marketing-banner.jpg')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "100vh",
+    height: "80vh",
     width: "100%",
   };
 
@@ -95,24 +94,25 @@ function Home() {
           {/* first section */}
           <section className="relative h-screen w-full">
             <div style={backgroundImg} className="absolute inset-0">
-              <div className="absolute inset-0 bg-black bg-opacity-20 backdrop-blur-md"></div>
+              <div className=""></div>
               <HeroHome>
                 <HomeContent />
               </HeroHome>
             </div>
+            
           </section>
 
           {/* second section  */}
-          <section className="">
+          <section className="relative">
             <div className="max-w-6xl px-4 sm:px-6 mx-auto">
-              <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-                <p className="text-red-600 hover:text-red-500 text-center mb-8">
+              <div className="pt-10 pb-10 md:pt-6 md:pb-6 ">
+                <p className="text-white text-center mb-8">
                   What do we do ?
                 </p>
                 <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
                   Wise Logics Digital Solutions help you Fly Digital and Smart!
                 </h2>
-                <h6 className="text-gray-600 max-w-3xl text-center m-auto">
+                <h6 className="text-gray-600 max-w-3xl text-center m-auto mt-5">
                   Our comprehensive digital marketing solutions will help you
                   drive the right message to the right target audience.
                 </h6>
@@ -213,10 +213,10 @@ function Home() {
 
           {/* fourth section  */}
           {/* Our bands  */}
-          <section>
+          <section className="bg-slate-200 text-black">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
               <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-                <h2 className="text-white text-center text-2xl lg:text-4xl pr-10 font-bold">
+                <h2 className="text-black text-center text-2xl lg:text-4xl pr-10 font-bold">
                   Full Growth Capabilities
                 </h2>
                 {/* Content section  */}
@@ -228,9 +228,9 @@ function Home() {
           </section>
 
           {/* fifth section  */}
-          <section>
+          {/* <section>
             <BlogCard />
-          </section>
+          </section> */}
 
           {/* sixth section  */}
           <section>

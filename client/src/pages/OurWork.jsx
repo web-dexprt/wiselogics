@@ -19,15 +19,15 @@ const ServiceContent = () => {
   return (
     <>
       <div className="text-center pb-12 md:pb-0">
-        <h1 className="text-5xl md:text-4xl  text-center md:text-start text-white font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
+        <h1 className="text-5xl md:text-4xl text-white font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">
         Web Wonders and &nbsp;
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+          <span className="text-orange-700">
           Marketing Miracles:
           </span>
           &nbsp; Your Journey to Digital Dominance
         </h1>
         <div className="max-w-6xl mx-auto">
-          <p className="text-lg lg:text-start text-center text-gray-100 mb-8" data-aos="zoom-y-out" data-aos-delay="150" >
+          <p className="text-lg text-gray-100 mb-8" data-aos="zoom-y-out" data-aos-delay="150" >
           Discover the magic of Web Wonders and Marketing Miracles. Elevate your brand's digital presence with captivating websites and strategic marketing solutions. Join us on the journey to digital dominance.
           </p>
         </div>
@@ -44,7 +44,7 @@ function Ourwork() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "60vh",
+    height: "70vh",
     width: "100%",
   };
 
@@ -72,7 +72,7 @@ function Ourwork() {
           {/* Tech fields */}
           <div className="bg-slate-200">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-              <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
+              <div className="pt-32 pb-12 md:pt-40 md:pb-6 ">
                 <h2 className="text-black text-center text-2xl lg:text-4xl pr-10 font-bold">
                   Our Work
                 </h2>
@@ -85,7 +85,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -99,7 +99,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -113,7 +113,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -127,7 +127,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -141,7 +141,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -155,7 +155,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -169,7 +169,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -183,7 +183,7 @@ function Ourwork() {
                       alt=""
                     />
                     </div>
-                    <div className="bg-black text-white px-5 py-8">
+                    <div className="bg-gray-900 hover:bg-black text-white px-5 py-8">
                       <h3>An IoT-based smart electric heating app UI/UX Design</h3>
                       <p>Thanks to the Internet of Things (IoT) which makes the concept of a smart home possible.</p>
                       <a href="javascript:;" className="py-2 px-5 mt-5 rounded inline-flex items-center border border-slate-300 hover:border-indigo-300">Learn More <MdKeyboardDoubleArrowRight className="ms-4" /></a>
@@ -193,8 +193,8 @@ function Ourwork() {
               </div>
             </div>
 
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 md:pb-20 ">
-              <h3 className="text-black text-center text-xl lg:text-4xl pr-10 font-bold my-10">Work by Categories</h3>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-6">
+              <h3 className="text-black text-center text-xl lg:text-2xl pr-10 font-bold my-10">Work by Categories</h3>
                 <ul className="grid grid-cols-4 grid-cols-1 p-5 gap-10">
                   <li><a href="javascript:;" className="underline decoration-zinc-800 hover:decoration-sky-500 underline-offset-8">Digital Marketing</a></li>
                   <li><a href="javascript:;" className="underline decoration-zinc-800 hover:decoration-sky-500 underline-offset-8">Brand Identity</a></li>
@@ -205,8 +205,8 @@ function Ourwork() {
                 </ul>
             </div>
 
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 md:pb-20 ">
-              <h3 className="text-black text-center text-xl lg:text-4xl pr-10 font-bold my-10">Work by Industries</h3>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-20 md:pb-40">
+              <h3 className="text-black text-center text-xl lg:text-2xl pr-10 font-bold my-10">Work by Industries</h3>
                 <ul className="grid grid-cols-4 grid-cols-1 p-5 gap-10">
                   <li><a href="javascript:;" className="underline decoration-zinc-800 hover:decoration-sky-500 underline-offset-8">Food / Restaurant</a></li>
                   <li><a href="javascript:;" className="underline decoration-zinc-800 hover:decoration-sky-500 underline-offset-8">Home Automation</a></li>

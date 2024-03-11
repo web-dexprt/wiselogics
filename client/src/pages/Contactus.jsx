@@ -73,7 +73,7 @@ const ContactContent = () => {
             >
               <div>
                 <Link
-                  className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0 flex items-center gap-x-2"
+                  className="btn text-white bg-orange-700 hover:bg-orange-6 00 w-full mb-4 sm:w-auto sm:mb-0 flex items-center gap-x-2"
                   to=" https://wa.me/918219066645"
                 >
                   <span>Lets Chat</span>
@@ -236,7 +236,7 @@ const ContactContent = () => {
               <div className="mt-10">
                 <button
                   type="submit"
-                  className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="block w-full rounded-md bg-green-700 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                 >
                   Let's talk
                 </button>
@@ -277,8 +277,6 @@ function Contactus() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-
-          <Blog />
           <FeaturesBlocks />
           <Testimonials />
           <Newsletter />
