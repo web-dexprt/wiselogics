@@ -196,7 +196,7 @@ function Footer() {
             <p className="text-sm text-gray-600 mb-4">
               Get the latest news and articles to your inbox every month.
             </p>
-            <form >
+            <form>
               <div className="flex flex-wrap mb-4">
                 <div className="w-full">
                   <label className="block text-sm sr-only" htmlFor="newsletter">
@@ -246,39 +246,38 @@ function Footer() {
             <li>
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="text-orange-600 flex justify-center items-center hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
-                <FaXTwitter className="text-2xl p-1"/>
+                <FaXTwitter className="text-2xl p-1" />
               </Link>
             </li>
             <li className="ml-4">
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-blue-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >
-                <FaFacebook className="text-2xl p-1"/> 
+                <FaFacebook className="text-2xl p-1" />
               </Link>
             </li>
             <li className="ml-4">
               <Link
                 to="https://www.instagram.com/p/C4IgEIxB3av/?igsh=MWs5dHR2cjl4anhrbw=="
                 target="_blank"
-                className="flex justify-center items-center text-gray-600 hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="text-orange-600 flex justify-center items-center hover:text-orange-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Instagram"
               >
-                <FaInstagram  className="text-2xl p-1"/> 
-
+                <FaInstagram className="text-2xl p-1" />
               </Link>
             </li>
             <li className="ml-4">
               <Link
                 to="/"
-                className="flex justify-center items-center text-gray-600 hover:text-blue-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Pintrest"
               >
-                <FaPinterest className="text-2xl p-1 "/>
+                <FaPinterest className="text-2xl p-1 " />
               </Link>
             </li>
           </ul>
