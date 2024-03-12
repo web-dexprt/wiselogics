@@ -1,21 +1,22 @@
 import React, { useState, useRef, useEffect, Children } from "react";
 import { Link } from "react-router-dom";
+import '../css/style.css'
 
 
 
 function HeroHome({children}) {
  
   return (
-    <section className="relative">
+    <section className="w-full relative top-banner">
       {/* Illustration behind hero content */}
       {/* <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
         aria-hidden="true"
       ></div> */}
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="px-2 top-banner-text">
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-60 md:pb-20">
+        <div className="pt-20 px-4 md:px-8">
           {/* Section header */}
           {
             children

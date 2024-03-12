@@ -105,8 +105,8 @@ function Header() {
         !top && "bg-white backdrop-blur-sm shadow-lg "
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
-        <div className="nav-bar flex items-center justify-between h-16 md:h-20">
+      <div className="w-full mx-auto px-5 sm:px-6">
+        <div className="nav-bar flex items-center justify-between h-20">
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}

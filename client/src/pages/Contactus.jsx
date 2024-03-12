@@ -28,7 +28,7 @@ const ContactContent = () => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-x-10">
-      <div className="flex justify-start items-start md:mt-20">
+      <div className="flex justify-start items-center md:mt-20">
         <div className="text-center pb-12 md:pb-16">
           <h1
             className="text-5xl md:text-4xl text-white font-bold leading-tighter tracking-tighter mb-4 lg:text-start mg:text-center"
@@ -78,7 +78,7 @@ const ContactContent = () => {
                 >
                   <span>Lets Chat</span>
                   <span>
-                    <FaWhatsapp className="text-2xl text-green-600" />
+                    <FaWhatsapp className="text-2xl text-white-600" />
                   </span>
                 </Link>
               </div>
@@ -266,9 +266,11 @@ function Contactus() {
         {/*  Page content */}
         <main className="flex-grow">
           {/*  Page sections */}
-          <HeroHome>
-            <ContactContent />
-          </HeroHome>
+          <div className="contact-page">
+            <HeroHome>
+              <ContactContent />
+            </HeroHome>
+          </div>
 
           {/* map section  */}
           <div className="google-map-code">

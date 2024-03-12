@@ -51,7 +51,7 @@ function Home() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "70vh",
+    height: "75vh",
     width: "100%",
   };
   return (

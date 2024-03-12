@@ -49,7 +49,7 @@ const HomeContent = () => {
             <div>
               <Link
                 className="btn text-white bg-orange-700 hover:bg-orange-600 w-full mb-4 sm:w-auto sm:mb-0"
-                href="/contact-us"
+                to="/contact-us"
               >
                 Let’s Connect
               </Link>
@@ -57,7 +57,7 @@ const HomeContent = () => {
             <div>
               <Link
                 className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                href="/our-work"
+                to="/our-work"
               >
                 Learn more
               </Link>
@@ -94,10 +94,11 @@ function Home() {
           {/* first section */}
           <section className="relative h-screen w-full">
             <div style={backgroundImg} className="absolute inset-0">
-              <div className=""></div>
-              <HeroHome>
-                <HomeContent />
-              </HeroHome>
+              <div className="home-page">
+                <HeroHome>
+                  <HomeContent />
+                </HeroHome>
+              </div>
             </div>
             
           </section>
@@ -105,7 +106,7 @@ function Home() {
           {/* second section  */}
           <section className="relative">
             <div className="max-w-6xl px-4 sm:px-6 mx-auto">
-              <div className="pt-10 pb-10 md:pt-6 md:pb-6 ">
+              <div className="pt-20 pb-10 md:pt-40 md:pb-20 ">
                 <p className="text-white text-center mb-8">
                   What do we do ?
                 </p>

@@ -246,7 +246,7 @@ function Footer() {
             <li>
               <Link
                 to="/"
-                className="text-orange-600 flex justify-center items-center hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="w-24 h-24 text-orange-600 flex justify-center items-center hover:text-orange-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Twitter"
               >
                 <FaXTwitter className="text-2xl p-1" />
@@ -255,7 +255,7 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="/"
-                className="text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="w-24 h-24 text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >
                 <FaFacebook className="text-2xl p-1" />
@@ -265,7 +265,7 @@ function Footer() {
               <Link
                 to="https://www.instagram.com/p/C4IgEIxB3av/?igsh=MWs5dHR2cjl4anhrbw=="
                 target="_blank"
-                className="text-orange-600 flex justify-center items-center hover:text-orange-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="w-24 h-24 text-orange-600 flex justify-center items-center hover:text-orange-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Instagram"
               >
                 <FaInstagram className="text-2xl p-1" />
@@ -274,7 +274,7 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="/"
-                className="text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="w-24 h-24 text-blue-600 flex justify-center items-center hover:text-blue-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Pintrest"
               >
                 <FaPinterest className="text-2xl p-1 " />

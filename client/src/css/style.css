@@ -23,4 +23,18 @@
     display: none;
 }
 
-
+.top-banner{
+    position: relative;
+    height: 75vh;
+}
+.top-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+}
+.home-page .top-banner, .contact-page .top-banner{
+    height: 100vh;
+}
